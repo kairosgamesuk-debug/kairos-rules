@@ -534,7 +534,7 @@
 <ol>
   <li><strong>Player Turns</strong> &mdash; Each human player takes a turn (in player order)</li>
   <li><strong>Automa Turns</strong> &mdash; All AI players resolve automatically (if present)</li>
-  <li><strong>Early Win Check</strong> &mdash; If the Timeline is above 0 and any player has 0 blots, players win immediately (before Kronos acts)</li>
+  <li><strong>Early Win Check</strong> &mdash; If the Timeline is positive (above 0) and any player has 0 blots, players win immediately (before Kronos acts)</li>
   <li><strong>Kronos Phase</strong> &mdash; The automated antagonist acts (see Section 15)</li>
   <li><strong>Post-Kronos Win/Loss Check</strong> &mdash; Check victory or defeat conditions again after Kronos resolves</li>
 </ol>
@@ -558,8 +558,8 @@
 <h3>6.3 Pick Up Article</h3>
 <p>An agent at a location with an available item or crystal can pick it up and add it to their inventory.</p>
 <ul>
-  <li><strong>At HQ:</strong> This is a free action (doesn't consume the agent's turn)</li>
-  <li><strong>Elsewhere:</strong> This consumes the agent's action for the turn</li>
+  <li><strong>Items and crystals already found or recovered:</strong> This is a free action (doesn't consume the agent's turn)</li>
+  <li><strong>Recovery (Search for an items or recovery of a crystal):</strong> This consumes the agent's action for the turn</li>
   <li><strong>Carry limit:</strong> Regular agents carry up to <strong>2</strong> articles; TimeLords carry up to <strong>3</strong></li>
 </ul>
 
