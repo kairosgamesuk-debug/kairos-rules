@@ -480,19 +480,13 @@
 
 <table>
   <tr><th class="center">Total Seats</th><th class="center">Agents per Player</th><th class="center">Starting TimeLords</th><th class="center">Starting Blots</th><th class="center">Max Rounds (Standard)</th></tr>
-  <tr><td class="center">1</td><td class="center">12</td><td class="center">4</td><td class="center">14</td><td class="center">14</td></tr>
-  <tr><td class="center">2</td><td class="center">6</td><td class="center">2</td><td class="center">13</td><td class="center">14</td></tr>
-  <tr><td class="center">3</td><td class="center">4</td><td class="center">1</td><td class="center">12</td><td class="center">13</td></tr>
-  <tr><td class="center">4</td><td class="center">3</td><td class="center">1</td><td class="center">11</td><td class="center">13</td></tr>
+  <tr><td class="center">1</td><td class="center">12</td><td class="center">4</td><td class="center">10</td><td class="center">14</td></tr>
+  <tr><td class="center">2</td><td class="center">6</td><td class="center">2</td><td class="center">9</td><td class="center">14</td></tr>
+  <tr><td class="center">3</td><td class="center">4</td><td class="center">1</td><td class="center">9</td><td class="center">13</td></tr>
+  <tr><td class="center">4</td><td class="center">3</td><td class="center">1</td><td class="center">8</td><td class="center">13</td></tr>
 </table>
 
-<p><strong>Starting Kairos (&#11088;):</strong> Compensates for turn order disadvantage.</p>
-<ul>
-  <li>Player 1 (first to act): 0&#11088;</li>
-  <li>Player 2: 1&#11088;</li>
-  <li>Player 3: 2&#11088;</li>
-  <li>Player 4: 3&#11088;</li>
-</ul>
+<p><strong>Starting Kairos (&#11088;):</strong> All players start with 0 Kairos.</p>
 
 <h3>Initial State</h3>
 <ul>
@@ -534,7 +528,7 @@
 <ol>
   <li><strong>Player Turns</strong> &mdash; Each human player takes a turn (in player order)</li>
   <li><strong>Automa Turns</strong> &mdash; All AI players resolve automatically (if present)</li>
-  <li><strong>Early Win Check</strong> &mdash; If the Timeline is positive (above 0) and any player has 0 blots, players win immediately (before Kronos acts)</li>
+  <li><strong>Early Win Check</strong> &mdash; If the Timeline is above 0 and any player has 0 blots, players win immediately (before Kronos acts)</li>
   <li><strong>Kronos Phase</strong> &mdash; The automated antagonist acts (see Section 15)</li>
   <li><strong>Post-Kronos Win/Loss Check</strong> &mdash; Check victory or defeat conditions again after Kronos resolves</li>
 </ol>
@@ -558,8 +552,8 @@
 <h3>6.3 Pick Up Article</h3>
 <p>An agent at a location with an available item or crystal can pick it up and add it to their inventory.</p>
 <ul>
-  <li><strong>Items and crystals already found or recovered:</strong> This is a free action (doesn't consume the agent's turn)</li>
-  <li><strong>Recovery (Search for an items or recovery of a crystal):</strong> This consumes the agent's action for the turn</li>
+  <li><strong>At HQ:</strong> This is a free action (doesn't consume the agent's turn)</li>
+  <li><strong>Elsewhere:</strong> This consumes the agent's action for the turn</li>
   <li><strong>Carry limit:</strong> Regular agents carry up to <strong>2</strong> articles; TimeLords carry up to <strong>3</strong></li>
 </ul>
 
@@ -575,8 +569,8 @@
 </ul>
 <p><strong>Ongoing effects (until end of round):</strong></p>
 <ul>
-  <li>The empowered crystal receives a <strong>+3 bonus</strong> to its Crystal Light 2d6 roll during the Kronos phase, and contributes <strong>+2 Timeline</strong> on success (instead of +1)</li>
-  <li>The paired artifact is <strong>"nerfed"</strong> &mdash; Kronos cannot steal, empower, or apply timeline control with it this round. <strong>However</strong>, nerfing requires a successful <strong>2d6 roll minus the crystal's depletion count &ge; 6</strong>. A fresh crystal has a 72% chance; a heavily depleted crystal may have as little as 3%. If the nerf roll fails, the empowerment still applies but the artifact is NOT nerfed and no blot reduction is granted (see Section 10 for full details)</li>
+  <li>The empowered crystal receives a <strong>+3 bonus</strong> to its Crystal Light 2d6 roll during the Kronos phase, and HQ crystals contribute <strong>+2 Timeline</strong> (instead of +1)</li>
+  <li>The paired artifact is <strong>"nerfed"</strong> &mdash; Kronos cannot steal, empower, or apply timeline control with it this round. <strong>However</strong>, nerfing requires a successful <strong>2d6 roll minus the artifact's depletion count &ge; 4</strong>. A fresh artifact has a 92% chance; after one nerf (+4 depletion) it drops to 42%. If the nerf roll fails, the empowerment still applies but the artifact is NOT nerfed and no blot reduction is granted (see Section 10 for full details)</li>
 </ul>
 <blockquote><strong>Important:</strong> Empowerment lasts only until the end of the current round. Crystals must be re-empowered each round to maintain the nerfing protection and Crystal Light roll bonus.</blockquote>
 
@@ -586,10 +580,13 @@
 <h3>6.7 Rescue from Lost in Time <em>(TimeLord only)</em></h3>
 <p>A TimeLord agent at HQ can rescue one allied agent that is Lost in Time. Both agents consume their turn for the round. The rescued agent returns to HQ with no penalty.</p>
 
-<h3>6.8 Escape Jail / Lost in Time</h3>
+<h3>6.8 Intel / Recon</h3>
+<p>When your agent is at a Time Location with an agent from another team, you can perform the <strong>Intel</strong> action to grant that team a one-use <strong>Intel Die</strong> (all 6 faces are wilds). The receiving team's agent shows a blue dot indicator. When the Intel Die is consumed in a recovery session, the indicator disappears. The Intel Die is a powerful cooperative tool for helping allies recover difficult articles.</p>
+
+<h3>6.9 Escape Jail / Lost in Time</h3>
 <p>Agents trapped in Jail or Lost in Time must attempt to escape (see Sections 12&ndash;13).</p>
 
-<h3>6.9 Skip Agent</h3>
+<h3>6.10 Skip Agent</h3>
 <p>Choose to have an agent take no action this turn.</p>
 
 <hr>
@@ -604,7 +601,7 @@
   <tr><td class="center"><span class="die-green">Green</span></td><td>Base Time</td><td>1, 1, 1, 1, 0, &#9733;</td><td>Always required (must show "1")</td></tr>
   <tr><td class="center"><span class="die-black">Black</span></td><td>Direction</td><td>2, 2, 3, X, 0, &#9733;</td><td>Direction: 2=past, 3=future; X=skull</td></tr>
   <tr><td class="center"><span class="die-white">White</span></td><td>Planet</td><td>5, 5, 4, X, 0, &#9733;</td><td>5=Earth location, 4=off-world (space/moon)</td></tr>
-  <tr><td class="center"><span class="die-orange">Orange</span></td><td>Ring</td><td>6, 6, 7, 8, 9, 0</td><td>Must match destination's ring (6=R3, 7=R2, 8=R1, 9=Vortex)</td></tr>
+  <tr><td class="center"><span class="die-orange">Orange</span></td><td>Ring</td><td>6, 6, 7, 8, X, 0</td><td>Must match destination's ring (6=R3, 7=R2, 8=R1); X=skull</td></tr>
   <tr><td class="center"><span class="die-blue">Blue</span></td><td>Portal</td><td>&#9733;, &#9733;, &#9733;, &#9733;, 0, X</td><td>Bonus die if destination is an active portal</td></tr>
   <tr><td class="center"><span class="die-yellow">Yellow</span></td><td>Adjacent</td><td>!, !, &#9733;, &#9733;, 0, &#9733;</td><td>Bonus die if adjacent; ! = negate (cancels one skull)</td></tr>
   <tr><td class="center"><span class="die-tl">TL</span></td><td>TimeLord</td><td>&#9733;, &#9733;, &#9733;, &#9733;, 0, 0</td><td>Bonus die (TimeLord agents only)</td></tr>
@@ -670,6 +667,7 @@
   <tr><td class="center"><span class="die-black">Black</span></td><td>Black</td><td>&#9733;, S, C, P, $, H</td><td>&#9733; = Wild; $ = Draw event</td></tr>
   <tr><td class="center"><span class="die-white">White</span></td><td>White</td><td>A, S, C, P, M, &#9733;</td><td>&#9733; = Wild</td></tr>
   <tr><td class="center"><span class="die-tl">TL</span></td><td>TL</td><td>M, C, P, H, &#9733;, &#9733;</td><td>TimeLord bonus (2 wilds!)</td></tr>
+  <tr><td class="center"><span style="color:#a78bfa">Purple</span></td><td>Intel</td><td>&#9733;, &#9733;, &#9733;, &#9733;, &#9733;, &#9733;</td><td>Granted by Intel/Recon action; single use, all wilds</td></tr>
 </table>
 
 <h3>Recovery Factors</h3>
@@ -741,7 +739,7 @@
 </table>
 
 <h3>Crystals (12 total)</h3>
-<p>Precious gems found at future Time Locations (space stations, moons, and distant planets). Crystals start at their correct Time Location. When recovered and brought to HQ, crystals are <strong>deposited</strong> &mdash; the player earns the crystal's <strong>Kairos (&#11088;)</strong> value and removes its <strong>Blot (&#11035;)</strong> value. Deposited crystals contribute to <strong>Crystal Light</strong> each round during the Kronos phase (each crystal rolls 1d6; on 4+ it adds +1 Timeline). Crystals can also be <strong>empowered</strong> by TimeLord agents for a roll bonus (see Section 6.5).</p>
+<p>Precious gems found at future Time Locations (space stations, moons, and distant planets). Crystals start at their correct Time Location. When recovered and brought to HQ, crystals are <strong>deposited</strong> &mdash; the player earns the crystal's <strong>Kairos (&#11088;)</strong> value and removes its <strong>Blot (&#11035;)</strong> value. Deposited crystals contribute to <strong>Crystal Light</strong> each round during the Kronos phase &mdash; HQ crystals give a flat +1 Timeline (+2 if empowered), while field crystals at the correct location roll 2d6 vs 9 for a chance at +2 or +3 Timeline. Crystals can also be <strong>empowered</strong> by agents at HQ for a roll bonus (see Section 6.5).</p>
 
 <table>
   <tr><th>Crystal</th><th class="center">&#11088; Kairos</th><th class="center">&#11035; Blots</th><th>Required Factors</th><th>Location</th></tr>
@@ -760,7 +758,7 @@
 </table>
 
 <h3>Artifacts (12 total)</h3>
-<p>Legendary relics of immense power. Artifacts start at their correct Time Location. Unlike items and crystals, artifacts are NOT carried &mdash; they are <strong>guarded</strong> in place after successful recovery. Guarding an artifact awards its <strong>Kairos (&#11088;)</strong> value, protects it from Kronos' theft attempts, and is one of the two prerequisites for TimeLord upgrades.</p>
+<p>Legendary relics of immense power. Artifacts start at their correct Time Location. Unlike items and crystals, artifacts are NOT carried &mdash; they are <strong>guarded</strong> in place after successful recovery. Guarding an artifact awards its <strong>Kairos (&#11088;)</strong> value and protects it from Kronos' theft attempts.</p>
 
 <table>
   <tr><th>Artifact</th><th class="center">&#11088; Kairos</th><th>Required Factors</th><th>Location</th></tr>
@@ -800,15 +798,7 @@
 <p>The number of starting TimeLords depends on player count (see Section 4 setup table). In a 1-player game you begin with 4 TimeLords; in a 2-player game, 2 each; in 3&ndash;4 player games, 1 each. TimeLords use military-style callsigns (e.g. T1Alpha, T1Bravo). All other agents start as regular agents.</p>
 
 <h3>Upgrading to TimeLord</h3>
-<p>A regular agent can be upgraded to TimeLord status when <strong>both</strong> of the following conditions are met:</p>
-<ol>
-  <li>The player has <strong>deposited at least one crystal</strong> at HQ</li>
-  <li>The player has <strong>guarded at least one artifact</strong> in the field</li>
-</ol>
-<p>When both conditions are satisfied, the next time an agent performs a qualifying action (guarding an artifact or depositing a crystal), one of the player's regular agents is automatically upgraded.</p>
-
-<h3>Agent Kairos (Experience) &amp; Upgrade Threshold</h3>
-<p>Each agent tracks their own <strong>agent kairos</strong> &mdash; cumulative experience earned through actions in the field. When an agent accumulates <strong>8 or more agent kairos</strong> while at HQ, they are eligible for automatic upgrade to TimeLord (if the player meets the crystal + artifact prerequisites above).</p>
+<p>Each agent tracks their own <strong>agent kairos</strong> &mdash; cumulative experience earned through actions in the field. When an agent accumulates <strong>8 or more agent kairos</strong>, they are automatically upgraded to TimeLord status.</p>
 
 <p><strong>How agents earn experience:</strong></p>
 <table>
@@ -845,17 +835,13 @@
 </ul>
 
 <h4>Nerf Dice Roll</h4>
-<p>Nerfing requires a successful dice roll. When an agent empowers a crystal, the empowerment always succeeds (granting the &#11088; Kairos and Crystal Light bonus), but the <strong>nerfing</strong> of the paired artifact depends on a <strong>2d6 roll minus the crystal's depletion count</strong>. A result of <strong>6 or higher</strong> is required for the nerf to take effect.</p>
+<p>Nerfing requires a successful dice roll. When an agent empowers a crystal, the empowerment always succeeds (granting the &#11088; Kairos and Crystal Light bonus), but the <strong>nerfing</strong> of the paired artifact depends on a <strong>2d6 roll minus the artifact's depletion count</strong>. A result of <strong>4 or higher</strong> is required for the nerf to take effect. Each successful nerf adds <strong>+4 depletion</strong> to the artifact, making future nerfs progressively harder.</p>
 
 <table>
-  <tr><th>Crystal Depletion</th><th class="center">Nerf Roll Needed</th><th class="center">Success Chance</th><th>Visual</th></tr>
-  <tr><td>Fresh crystal (0 depletion)</td><td class="center">2d6 &ge; 6</td><td class="center">72%</td><td><span class="prob-bar prob-high" style="width:72px"></span></td></tr>
-  <tr><td>Slightly depleted (1)</td><td class="center">2d6 &minus; 1 &ge; 6</td><td class="center">58%</td><td><span class="prob-bar prob-high" style="width:58px"></span></td></tr>
-  <tr><td>Depleted (2)</td><td class="center">2d6 &minus; 2 &ge; 6</td><td class="center">42%</td><td><span class="prob-bar prob-mid" style="width:42px"></span></td></tr>
-  <tr><td>Depleted (3)</td><td class="center">2d6 &minus; 3 &ge; 6</td><td class="center">28%</td><td><span class="prob-bar prob-mid" style="width:28px"></span></td></tr>
-  <tr><td>Heavily depleted (4)</td><td class="center">2d6 &minus; 4 &ge; 6</td><td class="center">17%</td><td><span class="prob-bar prob-low" style="width:17px"></span></td></tr>
-  <tr><td>Heavily depleted (5)</td><td class="center">2d6 &minus; 5 &ge; 6</td><td class="center">8%</td><td><span class="prob-bar prob-low" style="width:8px"></span></td></tr>
-  <tr><td>Heavily depleted (6+)</td><td class="center">2d6 &minus; 6 &ge; 6</td><td class="center">3%</td><td><span class="prob-bar prob-low" style="width:3px"></span></td></tr>
+  <tr><th>Artifact Depletion</th><th class="center">Nerf Roll Needed</th><th class="center">Success Chance</th><th>Visual</th></tr>
+  <tr><td>Fresh artifact (0 depletion)</td><td class="center">2d6 &ge; 4</td><td class="center">92%</td><td><span class="prob-bar prob-high" style="width:92px"></span></td></tr>
+  <tr><td>After 1 nerf (4 depletion)</td><td class="center">2d6 &minus; 4 &ge; 4</td><td class="center">42%</td><td><span class="prob-bar prob-mid" style="width:42px"></span></td></tr>
+  <tr><td>After 2 nerfs (8 depletion)</td><td class="center">2d6 &minus; 8 &ge; 4</td><td class="center">3%</td><td><span class="prob-bar prob-low" style="width:3px"></span></td></tr>
 </table>
 
 <blockquote><strong>If nerf fails:</strong> The empowerment still happens (the crystal gets its Crystal Light bonus and the player earns +1&#11088; Kairos), but the paired artifact is <strong>NOT nerfed</strong> and no blot reduction is granted from the Kronos-held artifact bonus. This makes crystal depletion a serious long-term threat.</blockquote>
@@ -872,7 +858,8 @@
 
 <h3>Vortex Attempt</h3>
 <p>Roll <strong>2d6</strong> and calculate:</p>
-<p><strong>Result = 2d6 + (your empowered crystals) &minus; (Kronos' empowered artifacts)</strong></p>
+<p><strong>Result = 2d6 + (HQ crystals) &minus; (Kronos artifacts) + (other TimeLords at Vortex) + (urgency modifier)</strong></p>
+<p>TimeLords arriving at the Vortex can make an <strong>urgent attempt</strong> as a bonus action, but with a <strong>&minus;2 modifier</strong> (harder to succeed, easier to die). Or they can wait until their next turn for a normal attempt (no modifier). Other TimeLords already at the Vortex provide a <strong>+1 assist</strong> each to the roll.</p>
 
 <table>
   <tr><th class="center">Result</th><th>Outcome</th></tr>
@@ -894,7 +881,7 @@
 <table>
   <tr><th class="center">Option</th><th>Method</th><th>Cost</th></tr>
   <tr><td class="center">A</td><td>Roll <strong>2d6</strong> &mdash; if doubles, you escape!</td><td>&minus;2&#11088; Kairos (no blots)</td></tr>
-  <tr><td class="center">B</td><td><strong>Bribe Xanadu</strong> &mdash; instant escape</td><td>&minus;3&#11088; Kairos, +1&#11035; Blot</td></tr>
+  <tr><td class="center">B</td><td><strong>Bribe Xanadu</strong> &mdash; instant escape</td><td>&minus;3&#11088; Kairos, &minus;1&#11035; Blot</td></tr>
   <tr><td class="center">C</td><td>Use a <strong>KEEP &ndash; JAIL</strong> event card</td><td>Free (card discarded)</td></tr>
   <tr><td class="center">D</td><td>Use a <strong>KEEP &ndash; WILD</strong> event card</td><td>Free (card discarded)</td></tr>
 </table>
@@ -989,16 +976,17 @@
 <ul>
   <li><strong>+Paradox change:</strong> +(current paradoxes &minus; starting paradoxes). As paradoxes rise, Kronos grows stronger.</li>
   <li><strong>+Crystal excess:</strong> +max(0, player crystals at HQ &minus; Kronos artifacts held). Hoarding crystals gives Kronos a catch-up bonus.</li>
-  <li><strong>&minus;Protection:</strong> Agent present = &minus;3, Guarded artifact = &minus;1. Positioning agents still matters.</li>
+  <li><strong>&minus;Protection:</strong> Agent present = &minus;4, Guarded artifact = &minus;2. Positioning agents still matters.</li>
   <li><strong>&minus;Non-portal:</strong> &minus;5 if the artifact's location does not have an active portal.</li>
-  <li><strong>+Hard difficulty:</strong> +1 on Hard mode.</li>
+  <li><strong>+Ring modifier:</strong> Ring 1 (adjacent to Vortex) = +2, Ring 2 = +1, Ring 3 = +0. Inner ring artifacts are more vulnerable.</li>
+  <li><strong>+Hard difficulty:</strong> +2 on Hard mode, &minus;2 on Easy.</li>
 </ul>
 
 <table>
   <tr><th>Protection Level</th><th>Condition</th><th class="center">Roll Modifier</th></tr>
   <tr><td>Unprotected</td><td>No agent, not guarded</td><td class="center">+0</td></tr>
-  <tr><td>Guarded</td><td>Artifact has been guarded</td><td class="center">&minus;1</td></tr>
-  <tr><td>Protected</td><td>An agent is present</td><td class="center">&minus;3</td></tr>
+  <tr><td>Guarded</td><td>Artifact has been guarded</td><td class="center">&minus;2</td></tr>
+  <tr><td>Protected</td><td>An agent is present</td><td class="center">&minus;4</td></tr>
   <tr><td>Non-portal</td><td>Location has no active portal</td><td class="center">&minus;5</td></tr>
 </table>
 
@@ -1020,15 +1008,24 @@
 <p>If Kronos holds no artifacts, there is no timeline penalty.</p>
 
 <h3>Phase 4: CRYSTAL LIGHT (Timeline Recovery)</h3>
-<p>For each non-nerfed crystal deposited at any player's HQ, roll <strong>2d6</strong>:</p>
+<p>Crystals contribute to the Timeline based on their location:</p>
+
+<table>
+  <tr><th>Crystal Location</th><th>Mechanic</th><th class="center">MLT Gain</th></tr>
+  <tr><td><strong>HQ</strong> (not empowered)</td><td>Flat (no roll)</td><td class="center">+1</td></tr>
+  <tr><td><strong>HQ</strong> (empowered)</td><td>Flat (no roll)</td><td class="center">+2</td></tr>
+  <tr><td><strong>Field at paired artifact's correct TL</strong></td><td>Roll 2d6 + mods vs 9</td><td class="center">Hit: +2 (+3 if paired art nerfed); Miss: +1</td></tr>
+  <tr><td><strong>Field elsewhere</strong> (hq-activated)</td><td>Flat (no roll)</td><td class="center">+1</td></tr>
+  <tr><td><strong>Carried by agent</strong></td><td>Does not contribute</td><td class="center">0</td></tr>
+</table>
+
+<p><strong>Field crystal roll modifiers:</strong></p>
 <ul>
-  <li>On <strong>9+</strong>: The crystal contributes <strong>+1 Timeline</strong> (base payout), or <strong>+2 Timeline</strong> if empowered</li>
   <li><strong>Empowered crystals</strong> receive a <strong>+3 bonus</strong> to the roll</li>
-  <li><strong>Crystal excess modifier:</strong> +1 per (player crystals at HQ minus Kronos artifacts held) &mdash; having more crystals than Kronos has artifacts boosts the roll</li>
-  <li><strong>Depleted crystals</strong> still roll but contribute <strong>no Timeline</strong> on success (they've been exhausted by overflow)</li>
-  <li><strong>Easy difficulty:</strong> Each successful crystal contributes <strong>+1 extra</strong> Timeline</li>
+  <li><strong>Crystal excess modifier:</strong> +(HQ crystals &minus; Kronos artifacts held, minimum 0)</li>
+  <li><strong>Depleted crystals</strong> do not contribute Timeline (they've been exhausted)</li>
 </ul>
-<p>The Timeline is capped at &plusmn;15.</p>
+<p>All contributing crystals accumulate <strong>depletion</strong> each round &mdash; eventually they deplete and stop contributing. The Timeline is capped at &plusmn;15.</p>
 
 <h3>Timeline Overflow &amp; Depletion</h3>
 <p>If the timeline moves beyond the &plusmn;15 cap, the excess triggers <strong>depletion</strong>:</p>
@@ -1089,7 +1086,7 @@
 </ul>
 
 <h3>AutoAlpha Variant</h3>
-<p>AutoAlpha is a stronger Automa variant that receives a <strong>Purple (Alpha) bonus die</strong> on all time travel and recovery rolls. This die has <strong>3 wild faces and 3 blank faces</strong>, giving AutoAlpha agents a significant boost to their success rates and helping them keep pace with human players.</p>
+<p>AutoAlpha is a stronger Automa variant that receives a <strong>Purple (Alpha) bonus die</strong> on all time travel and recovery rolls. This die has <strong>2 wild faces and 4 blank faces</strong>, giving AutoAlpha agents a significant boost to their success rates and helping them keep pace with human players.</p>
 <p>Automa help balance the game for lower player counts, ensuring Kronos faces appropriate opposition and the cooperative challenge remains intact.</p>
 
 <hr>
@@ -1125,7 +1122,7 @@
   <li><strong>Empower crystals</strong> when paired artifact is in Kronos &mdash; removes 1 additional blot</li>
   <li><strong>Vortex success</strong> &mdash; removes 3 blots</li>
   <li><strong>Certain event cards</strong> reduce blots (Time Correction, Time Capsules, etc.)</li>
-  <li><strong>Jail bribe</strong> adds 1 blot (be careful!)</li>
+  <li><strong>Jail bribe</strong> removes 1 blot (but costs 3&#11088;)</li>
 </ul>
 
 <blockquote><strong>Tip:</strong> Players who clear their blots to 0 "ascend to the Golden Age." Among winners, <strong>Kairos score</strong> (Kairos minus Blots) serves as the tiebreaker.</blockquote>
@@ -1220,21 +1217,22 @@
   <tr><td>Portal pool reset</td><td class="center">Every 5 rounds</td></tr>
   <tr><td>Kronos steal start</td><td class="center">Round 1</td></tr>
   <tr><td>Kronos empower threshold</td><td class="center">d6 &ge; 4</td></tr>
-  <tr><td>TimeLord upgrade threshold</td><td class="center">8 agent kairos (+ crystal deposited + artifact guarded)</td></tr>
+  <tr><td>TimeLord upgrade threshold</td><td class="center">8 agent kairos</td></tr>
   <tr><td>Agent XP: travel/pickup/recovery</td><td class="center">+1 per successful action</td></tr>
   <tr><td>Agent XP: guard/deposit/restore</td><td class="center">+article's &#11088; Kairos value</td></tr>
   <tr><td>Agent XP: empower crystal</td><td class="center">+1</td></tr>
   <tr><td>Hazard die trigger</td><td class="center">Timeline &le; &minus;6 (non-TimeLords only)</td></tr>
   <tr><td>Empower crystal reward</td><td class="center">+1&#11088; (and -1&#11035; if paired artifact in Kronos)</td></tr>
-  <tr><td>Nerf roll: fresh crystal</td><td class="center">2d6 &ge; 6 (72%)</td></tr>
-  <tr><td>Nerf roll: depleted (3)</td><td class="center">2d6 &minus; 3 &ge; 6 (28%)</td></tr>
+  <tr><td>Nerf roll: fresh artifact (0 dep)</td><td class="center">2d6 &ge; 4 (92%)</td></tr>
+  <tr><td>Nerf roll: after 1 nerf (4 dep)</td><td class="center">2d6 &minus; 4 &ge; 4 (42%)</td></tr>
+  <tr><td>Nerf depletion per success</td><td class="center">+4 to artifact</td></tr>
   <tr><td>End Score Card max bonus</td><td class="center">+6&#11088; (3 per artifact, 2 artifacts per card)</td></tr>
-  <tr><td>Vortex success</td><td class="center">2d6 + empowered crystals &minus; Kronos empowered &ge; 9</td></tr>
+  <tr><td>Vortex success</td><td class="center">2d6 + HQ crystals &minus; Kronos artifacts + TL assist + urgency &ge; 9</td></tr>
   <tr><td>Vortex wipe</td><td class="center">&le; 4</td></tr>
   <tr><td>Vortex reward</td><td class="center">+10&#11088;, -3&#11035;</td></tr>
   <tr><td>Vortex max agents</td><td class="center">3</td></tr>
   <tr><td>Jail: doubles escape cost</td><td class="center">&minus;2&#11088;</td></tr>
-  <tr><td>Jail: bribe cost</td><td class="center">&minus;3&#11088;, +1&#11035;</td></tr>
+  <tr><td>Jail: bribe cost</td><td class="center">&minus;3&#11088;, &minus;1&#11035;</td></tr>
   <tr><td>Jail: forced bribe after</td><td class="center">3 turns</td></tr>
   <tr><td>LIT: escape threshold</td><td class="center">d6 &ge; 5</td></tr>
   <tr><td>LIT: forced release after</td><td class="center">3 turns (+1&#11035;)</td></tr>
@@ -1343,7 +1341,7 @@
   <tr><td><strong>Blots (&#11035;)</strong></td><td>Karma penalties. Must reach 0 for a player to contribute to a team victory.</td></tr>
   <tr><td><strong>Carry Capacity</strong></td><td>Number of articles an agent can hold: 2 (regular) or 3 (TimeLord).</td></tr>
   <tr><td><strong>Cronovision</strong></td><td>An in-game probability display showing Monte Carlo success rates for travel and recovery at each destination.</td></tr>
-  <tr><td><strong>Crystal Light</strong></td><td>Timeline increase during Kronos Phase 4 from crystals deposited at HQ. Each crystal rolls 2d6; on 9+ it contributes +1 or +2 Timeline. Empowered crystals get +3 bonus.</td></tr>
+  <tr><td><strong>Crystal Light</strong></td><td>Timeline increase during Kronos Phase 4. HQ crystals give flat +1 (+2 if empowered). Field crystals at the correct TL roll 2d6 vs 9 for +2 or +3 Timeline. Empowered crystals get +3 roll bonus.</td></tr>
   <tr><td><strong>Depletion</strong></td><td>When the timeline overflows beyond &plusmn;15, excess triggers depletion on crystals (negative overflow) or artifacts (positive overflow). Depleted crystals roll but contribute no Timeline.</td></tr>
   <tr><td><strong>Deposit</strong></td><td>Returning an item or crystal to HQ, earning its Kairos and removing its Blots. Items also reduce paradoxes by 1.</td></tr>
   <tr><td><strong>Dinosaur</strong></td><td>A time-displaced creature that spawns when paradoxes reach 10+. Tramples non-TimeLord agents. Can be sent back by TimeLords. (Expansion)</td></tr>
@@ -1359,7 +1357,8 @@
   <tr><td><strong>End Score Card</strong></td><td>A Kronos card chosen during setup that pairs two artifacts. Earn bonus kairos (up to +6) at game end for nerfing those artifacts.</td></tr>
   <tr><td><strong>Hazard Die (Baal)</strong></td><td>A penalty die added to travel rolls when the timeline is &le; &minus;6. Has 2 hazard crosses (miss next turn) and 4 blanks. TimeLords are immune.</td></tr>
   <tr><td><strong>Timeline</strong></td><td>The shared timeline tracker (-15 to +15). Must be positive to win.</td></tr>
-  <tr><td><strong>Nerfed</strong></td><td>An artifact whose paired crystal is empowered &mdash; Kronos skips it entirely. Requires a successful 2d6 roll minus depletion &ge; 6. Resets each round.</td></tr>
+  <tr><td><strong>Intel Die</strong></td><td>An all-wild recovery die granted by the Intel/Recon action. Single use &mdash; consumed when a recovery session starts.</td></tr>
+  <tr><td><strong>Nerfed</strong></td><td>An artifact whose paired crystal is empowered &mdash; Kronos skips it entirely. Requires a successful 2d6 roll minus artifact depletion &ge; 4. Each nerf adds +4 depletion. Resets each round.</td></tr>
   <tr><td><strong>Paired</strong></td><td>Each crystal is randomly linked to one artifact at game start. Empowering the crystal nerfs the artifact.</td></tr>
   <tr><td><strong>Paradox</strong></td><td>A counter that increases when Kronos steals artifacts and decreases when items are restored. Affects time collapse checks.</td></tr>
   <tr><td><strong>Portal</strong></td><td>A Time Location with a travel bonus (extra Blue die). 12 are active at any time.</td></tr>
