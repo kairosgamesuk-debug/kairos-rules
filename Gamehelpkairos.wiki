@@ -1,0 +1,486 @@
+== Kairos — Time Travellers ==
+
+'''Kairos''' is a 1-4 player cooperative time-travel board game. Players are time-travelling agents recovering precious historical articles from 36 time locations scattered across a hexagonal grid — from ancient Egypt to the moons of Saturn. An AI antagonist called '''Kronos''' steals artifacts and bends the Main Line Timeline toward darkness. Work together to restore articles, protect artifacts, and shift the timeline back to the light!
+
+=== Goal ===
+
+Shift the '''Main Line Timeline (MLT)''' above zero AND clear all blots from at least one player's record before time runs out.
+
+----
+
+== Setup ==
+
+{| class="wikitable"
+|-
+! Total Seats !! Agents per Player !! Starting TimeLords !! Starting Blots !! Max Rounds
+|-
+| 1 || 12 || 4 || 10 || 14
+|-
+| 2 || 6 || 2 || 9 || 14
+|-
+| 3 || 4 || 1 || 9 || 13
+|-
+| 4 || 3 || 1 || 8 || 13
+|}
+
+'''Starting Kairos (⭐):''' All players start with 0 Kairos.
+
+'''Initial State:''' MLT starts at '''-5''', Paradoxes at '''5'''. All agents begin at their player's HQ.
+
+The '''Time Field''' is a hex grid of 37 tiles: 36 Time Locations across Rings 1-3, plus the '''Time Vortex''' at the centre (Ring 0). Articles start at their correct locations (artifacts and crystals) or scattered to random past-era locations (items). 12 random locations are designated as active '''Portals'''.
+
+----
+
+== Your Turn ==
+
+On your turn, each of your agents may perform '''one action'''. When finished, press '''End Turn'''.
+
+=== Agent Actions ===
+
+{| class="wikitable"
+|-
+! Action !! Who Can Do It !! Description
+|-
+| Time Travel || Any agent || Roll Travel Dice to move to a destination Time Location
+|-
+| Recover Article || Any agent at a location with an article || Roll Recovery Dice to secure the article
+|-
+| Pick Up Article || Any agent || Pick up a recovered item/crystal. Free at HQ; costs action elsewhere
+|-
+| Recall to HQ || Any agent in the field || Return to HQ. Carried articles are auto-deposited
+|-
+| Empower Crystal || TimeLord at HQ only || Empower a deposited crystal (+1⭐, nerfs paired artifact)
+|-
+| Attempt Vortex || TimeLord at Vortex only || Try to switch off the Time Vortex (2d6 check)
+|-
+| Intel / Recon || Any agent at a TL with another team's agent || Grant the other team an Intel Die (all-wild recovery die, one use)
+|-
+| Rescue from LIT || TimeLord at HQ only || Rescue an allied agent Lost in Time
+|-
+| Skip || Any agent || Take no action this turn
+|}
+
+----
+
+== Time Travel ==
+
+Select an agent and destination, then roll the '''Travel Dice'''. Up to '''4 rolls''' total.
+
+=== Travel Dice ===
+
+{| class="wikitable"
+|-
+! Die !! Colour !! Faces !! Purpose
+|-
+| Ring || 🟠 Orange || 6, 6, 7, 8, X, 0 || Match destination ring (6=R3, 7=R2, 8=R1). X = skull
+|-
+| Direction || ⚫ Black || 2, 2, 3, X, 0, ★ || 2=past, 3=future (needed if crossing eras)
+|-
+| Base || 🟢 Green || 1, 1, 1, 1, 0, ★ || Always required (must show "1")
+|-
+| Portal || 🔵 Blue || ★, ★, ★, ★, 0, X || Bonus die if destination is a portal
+|-
+| Planet || ⚪ White || 5, 5, 4, X, 0, ★ || 5=Earth, 4=off-world (space/moon)
+|-
+| Adjacent || 🟡 Yellow || !, !, ★, ★, 0, ★ || Bonus die if destination is 1 hex away. ''!'' negates a skull
+|-
+| TimeLord || 🕐 TL || ★, ★, ★, ★, 0, 0 || Bonus die for TimeLord agents only
+|-
+| Age || 🟣 Purple || +, −, 0, 0, 0, 0 || Always included; + = Ageing check, − = Sickness check
+|}
+
+=== Special Faces ===
+* '''★ (Wild):''' Can satisfy any requirement. Only assigned on the '''final roll'''
+* '''X (Skull):''' Auto-locks, cannot be unlocked. '''2+ skulls = instant failure'''
+* '''! (Negate):''' Cancels one skull face (Adjacent die only)
+* '''+ (Ageing):''' On the Age die — triggers an ageing check (see below)
+* '''− (Sickness):''' On the Age die — triggers a sickness check (see below)
+* '''0 (Blank):''' No value
+
+=== Requirements ===
+* '''Ring''' — always required
+* '''Base "1"''' — always required
+* '''Planet''' — always required (5 for Earth, 4 for off-world)
+* '''Direction''' — required only when crossing eras (past ↔ future)
+
+Skull faces may trigger a '''Travel Event''' card draw.
+
+----
+
+== Time Travel Ageing ==
+
+Every travel roll includes an '''Age die''' reflecting the physical toll of time travel. It can cause your player avatar to age, rejuvenate, or suffer sickness.
+
+=== Ageing Check (+ face) ===
+When the + face is rolled, a d6 determines the outcome:
+{| class="wikitable"
+|-
+! d6 Result !! Effect
+|-
+| 1 || '''Age Up''' — avatar moves one step forward (e.g. Youth → Adult)
+|-
+| 2 || '''De-Age''' — avatar moves one step backward (e.g. Adult → Youth)
+|-
+| 3–6 || No effect
+|}
+
+=== Age Steps ===
+Child → Youth → Adult → Old → '''Zero Time'''
+
+All players begin as '''Youth'''. The avatar picture changes to reflect the current age.
+
+=== Zero Time ===
+If ageing would push past Old (aging up) or below Child (de-aging), the player enters '''Zero Time''':
+* A dramatic popup shows the avatar transformation
+* '''All remaining unspent agents are immediately marked as spent'''
+* The player's turn ends immediately
+* The avatar resets from Zero Time at the start of the next turn
+
+=== Sickness Check (− face) ===
+When the − face is rolled, a d6 determines the outcome:
+{| class="wikitable"
+|-
+! d6 Result !! Effect
+|-
+| 1–2 || '''Time Travel Sickness''' — the travelling agent misses their next turn
+|-
+| 3–6 || No effect
+|}
+
+'''Note:''' The Age die is separate from the '''Hazard (Baal) die''', which only appears when the timeline drops to −6 or below. Both can be in the travel pool simultaneously.
+
+----
+
+== Article Recovery ==
+
+When an agent is at a Time Location with an unclaimed article, roll the '''Recovery Dice'''.
+
+=== Recovery Dice ===
+
+{| class="wikitable"
+|-
+! Die !! Colour !! Faces
+|-
+| Red || 🔴 || A, S, C, P, M, $
+|-
+| Blue || 🔵 || A, S, C, P, $, H
+|-
+| Green || 🟢 || A, S, C, P, ★, H
+|-
+| Black || ⚫ || ★, S, C, P, $, H
+|-
+| White || ⚪ || A, S, C, P, M, ★
+|-
+| TimeLord || 🕐 TL || M, C, P, H, ★, ★
+|-
+| Intel || 🟣 In || ★, ★, ★, ★, ★, ★ || Granted by Intel/Recon action; single use
+|}
+
+=== Specialist Factors ===
+
+{| class="wikitable"
+|-
+! Code !! Specialist !! Description
+|-
+| A || Archivist || Archaeological and archival expertise
+|-
+| S || Security || Physical security and protection
+|-
+| C || Cryptohacker || Cyber security and code-breaking
+|-
+| P || Psychotronics || Psychic defence and mental warfare
+|-
+| M || Medical || Medical support and emergency care
+|-
+| H || Historian || Historical research and cultural knowledge
+|}
+
+Up to '''4 rolls'''. '''$ faces''' trigger a '''Recovery Event''' card draw. Wilds count on the '''final roll''' only.
+
+'''On Success:''' Items and Crystals are added to the agent's inventory. Artifacts are '''guarded''' at their location (stay on the tile but protected from Kronos).
+
+----
+
+== Article Types ==
+
+=== Items (12 total) ===
+Historical curiosities scattered to random past-era locations. Carry them back to HQ to '''restore''' them.
+
+'''Restoring an item at HQ awards:'''
+* '''⭐ Kairos''' (typically 2-4)
+* '''−⚫ Blots''' removed (typically 1)
+* '''−1 Paradox''' (vital for slowing time collapse)
+
+=== Crystals (12 total) ===
+Precious gems from future time locations. Deposit at HQ for '''Crystal Light''' each Kronos phase.
+
+'''Depositing a crystal awards:'''
+* '''⭐ Kairos''' (typically 2-3)
+* '''−⚫ Blots''' removed (typically 1)
+* '''Crystal Light''' each round (see Crystal Light section below)
+
+=== Artifacts (12 total) ===
+Legendary relics of great power. Unlike items and crystals, artifacts are '''NOT carried''' — they are '''guarded''' at their location after recovery.
+
+'''Guarding an artifact awards:'''
+* '''⭐ Kairos''' (typically 2-4)
+* Protection from Kronos theft (harder to steal when guarded)
+
+Each crystal is randomly '''paired''' with one artifact. Empowering a crystal '''nerfs''' its paired artifact (Kronos skips it entirely during steal).
+
+----
+
+== Intel / Recon ==
+
+When your agent is at a Time Location with an agent from another team, you can perform the '''Intel''' action to grant that team a one-use '''Intel Die''' (all wilds). The receiving team's agent shows a blue dot indicator. When the Intel Die is used in a recovery session, the indicator disappears.
+
+----
+
+== TimeLord Upgrades ==
+
+A regular agent upgrades to '''TimeLord''' when it accumulates '''8 or more Kairos (⭐)''' (agent_kairos ≥ 8).
+
+'''TimeLord Benefits:'''
+* '''Extra TL die''' on travel and recovery rolls (mostly wilds!)
+* '''Carry 3''' articles instead of 2
+* '''Empower Crystals''' at HQ (+1⭐, nerfs paired artifact, -1⚫ if artifact in Kronos)
+* '''Attempt Vortex''' — try to switch off the Time Vortex
+* '''Rescue''' allied agents from Lost in Time
+
+----
+
+== Kronos Phase (End of Round) ==
+
+After all players and Automa act, '''Kronos''' executes these phases:
+
+'''Phase 1 — STEAL:''' Kronos targets ALL artifacts (portal and non-portal locations). Roll '''2d6 per artifact + modifiers''', steal on '''9+''':
+
+{| class="wikitable"
+|-
+! Modifier !! Roll Adjustment
+|-
+| Non-portal location || −5
+|-
+| Ring-1 location (inner ring, adjacent to Vortex) || +2
+|-
+| Ring-2 location || +1
+|-
+| Difficulty (Hard / Easy) || +2 Hard, −2 Easy
+|-
+| Crystal excess (when positive) || + excess
+|-
+| Timeline tier (MLT ÷ 5, truncated toward zero) || ± tier
+|-
+| Guarded (recovered) || −2
+|-
+| Protected (agent present) || −4
+|-
+| Nerfed (paired crystal empowered) || Skipped entirely
+|}
+
+'''Phase 2 — EMPOWER:''' For each artifact Kronos holds, d6 ≥ 4 = empowered (deals more damage).
+
+'''Phase 3 — DARKNESS:''' Each artifact Kronos holds damages the Timeline:
+* Empowered artifact: −2 MLT (−3 on Hard)
+* Non-empowered: −1 MLT (−2 on Hard)
+
+'''Phase 4 — CRYSTAL LIGHT:''' Crystals contribute to the Timeline based on their location:
+
+{| class="wikitable"
+|-
+! Crystal Location !! Mechanic !! MLT Gain
+|-
+| '''HQ''' (not empowered) || Flat (no roll) || +1
+|-
+| '''HQ''' (empowered) || Flat (no roll) || +2
+|-
+| '''Field at paired artifact's correct TL''' || Roll 2d6 + mods vs 9 || Hit: +2 (+3 if paired artifact nerfed); Miss: +1
+|-
+| '''Field elsewhere''' (hq-activated) || Flat (no roll) || +1
+|-
+| '''Carried by agent''' || Does not contribute || 0
+|}
+
+Field crystal roll modifiers: +3 if empowered, + crystal excess (HQ crystals − Kronos artifacts, minimum 0).
+
+All contributing crystals accumulate '''depletion''' — eventually they deplete and stop contributing.
+
+'''Phase 5 — TIME COLLAPSE:''' Roll 2d6 (adjusted ±3 at MLT extremes). If roll ≤ paradox count, '''max rounds decreases by 1'''. Locked if Vortex has been switched off. Cannot reduce below 6 rounds.
+
+'''Phase 6 — PORTAL ROTATION:''' Remove portals equal to player count, refill to 12. Pool resets every 5 rounds.
+
+All empowered/nerfed flags are '''cleared''' at end of round.
+
+----
+
+== Special Locations ==
+
+=== Time Vortex ===
+Centre of the hex grid. Only '''TimeLords''' can attempt to switch it off:
+
+Roll: '''2d6 + HQ crystals − Kronos artifacts + other TLs at Vortex + urgency modifier'''
+
+{| class="wikitable"
+|-
+! Result !! Outcome
+|-
+| ≥ 9 || '''SUCCESS''' — +10⭐, −3⚫, max rounds locked (time collapse disabled)
+|-
+| 5-8 || No effect
+|-
+| ≤ 4 || '''WIPE''' — agent destroyed permanently
+|}
+
+TimeLords arriving at the Vortex can make an '''urgent attempt''' as a bonus action, but with a '''−2 modifier''' (harder to succeed, easier to die). Or wait until next turn for a normal attempt.
+
+Max 3 agents at the Vortex simultaneously.
+
+=== Xanadu Jail ===
+Agents sent here by event cards. Escape options (turns 1-2):
+* Roll '''2d6 doubles''' (costs −2⭐)
+* '''Bribe''' — instant escape (costs −3⭐, removes −1⚫)
+* Play a '''KEEP – JAIL''' or '''KEEP – WILD''' card
+* After '''3 turns''': forced bribe release
+
+=== Lost in Time ===
+Agents drifting through temporal space. Escape options (turns 1-2):
+* Roll '''d6 ≥ 5''' (free)
+* Play a '''KEEP – LIT''' or '''KEEP – WILD''' card
+* '''TimeLord rescue''' from HQ (both agents consume their turn)
+* After '''3 turns''': forced release (+1⚫)
+
+----
+
+== Event Cards ==
+
+=== Travel Events (40 cards) ===
+Drawn when skull faces appear during travel. Effects include: Send to Jail, Lost in Time, Add/Remove Blots, Miss Turn, Recall to HQ, Wiped Out, Upgrade to TimeLord. Some are '''KEEP''' cards held in hand for later use.
+
+=== Recovery Events (18 cards) ===
+Drawn when '''$''' faces appear during recovery. Effects include: Add Blot, Add Requirement, Wipe Locked Dice, Mission Fail, Lose Inventory, Send to Jail, Recall to HQ.
+
+----
+
+== Time-Travelling Dinosaurs (Optional) ==
+
+An optional game mode that can be enabled in game options. Dinosaurs are special entities that roam the time field and interact with agents and articles.
+
+----
+
+== Easter Egg Crystal (Optional) ==
+
+An optional hidden mechanic. When enabled, a secret Easter Egg crystal is placed somewhere in the time field. If discovered and brought to an HQ, it '''permanently activates''' that HQ as an Easter Egg location. Once activated, any agent at that HQ can perform an Easter Egg upgrade — even if the crystal is later moved away. The activation is permanent for the game.
+
+----
+
+== Winning & Losing ==
+
+=== Victory ===
+* MLT is '''above 0''', AND
+* At least one player (human or Automa) has '''0 blots'''
+* Checked '''twice per round''': after player turns (before Kronos) and after Kronos phase
+
+=== Defeat ===
+* Max rounds reached and MLT ≤ 0 — '''Kronos wins'''
+* MLT > 0 but no player at 0 blots — '''Pyrrhic victory''' (light endures, no one ascends)
+
+=== Scoring ===
+'''Final Score = Kairos (⭐) − Blots (⚫)''' (minimum 0). Tiebreaker among winners.
+
+=== How to Clear Blots ===
+* Restore items at HQ (−blots, −1 paradox each)
+* Deposit crystals at HQ (−blots)
+* Empower crystals when paired artifact in Kronos (−1 extra blot)
+* Switch off the Vortex (−3 blots)
+* Bribe escape from Jail (−1 blot)
+* Certain event cards
+
+----
+
+== Automa (AI Players) ==
+
+Automa fill empty seats (up to 4 total). They follow automated logic to travel, recover, deposit, guard, and empower. Automa '''can win the game''' — if an Automa clears its blots while MLT is positive, the team wins.
+
+'''AutoAlpha:''' A stronger Automa variant that receives a bonus '''Purple (Alpha) die''' on all travel and recovery rolls (2 wilds, 4 blanks). Helps AutoAlpha agents keep pace with human players.
+
+'''Baal Die:''' Certain conditions grant the '''Hazel (Baal) die''' (2 crosses, 4 blanks). Crosses have special effects.
+
+----
+
+== Game Options ==
+
+{| class="wikitable"
+|-
+! Option !! Choices !! Default
+|-
+| Difficulty || Easy / Medium / Hard || Medium
+|-
+| Game Length || Short (−2 rounds) / Standard / Long (+2 rounds) || Standard
+|-
+| Number of Automa || 0-3 AI players || 0
+|-
+| Dinosaurs || On / Off || Off
+|-
+| Easter Egg Crystal || On / Off || Off
+|}
+
+----
+
+== Quick Reference ==
+
+{| class="wikitable"
+|-
+! Stat !! Value
+|-
+| Starting MLT || −5
+|-
+| Starting Paradoxes || 5
+|-
+| Max MLT || 15
+|-
+| Agent carry capacity || 2 (regular) / 3 (TimeLord)
+|-
+| TimeLord upgrade threshold || Agent Kairos ≥ 8
+|-
+| Max dice rolls || 4 (travel and recovery)
+|-
+| Skulls to auto-fail travel || 2+
+|-
+| Active portals || 12 (rotate each round)
+|-
+| Kronos steal threshold || 9+ on 2d6 per artifact
+|-
+| Non-portal steal modifier || −5
+|-
+| Guarded modifier || −2
+|-
+| Protected (agent present) modifier || −4
+|-
+| Kronos empower threshold || d6 ≥ 4
+|-
+| Crystal Light (HQ) || +1 MLT flat (empowered: +2)
+|-
+| Crystal Light (field at correct TL) || 2d6 vs 9: hit +2 MLT, miss +1 MLT
+|-
+| Empower crystal reward || +1⭐ (and −1⚫ if paired artifact in Kronos)
+|-
+| Vortex success || 2d6 + crystals − Kronos + TL assist + urgency ≥ 9
+|-
+| Vortex wipe || ≤ 4
+|-
+| Vortex reward || +10⭐, −3⚫
+|-
+| Jail: doubles escape || −2⭐
+|-
+| Jail: bribe || −3⭐, −1⚫ (removes 1 blot)
+|-
+| Jail: forced after || 3 turns
+|-
+| LIT: escape threshold || d6 ≥ 5
+|-
+| LIT: forced after || 3 turns (+1⚫)
+|-
+| Item restore bonus || −1 Paradox per item
+|-
+| Collapse floor || 6 rounds minimum
+|}
