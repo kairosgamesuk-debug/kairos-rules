@@ -358,7 +358,8 @@
   <span class="nav-links">
     <a href="#toc">Contents</a>
     <a href="#sec-21">Quick Ref</a>
-    <a href="#sec-24">Glossary</a>
+    <a href="#sec-aging">Aging</a>
+    <a href="#sec-27">Dice</a>
     <a href="#article-gallery">Articles</a>
     <a href="#gallery">Locations</a>
   </span>
@@ -403,6 +404,7 @@
     <li><a href="#sec-24">Glossary</a></li>
     <li><a href="#sec-25">Expansion &mdash; Easter Egg Crystal</a></li>
     <li><a href="#sec-26">Expansion &mdash; Time-Travelling Dinosaurs</a></li>
+    <li><a href="#sec-27">Appendix A &mdash; Dice Reference</a></li>
   </ol>
 </nav>
 
@@ -451,8 +453,8 @@
 
 <h3>Dice</h3>
 <ul>
-  <li><strong>6 Travel Dice</strong> (+ 1 TimeLord bonus die) &mdash; Used for time travel attempts</li>
-  <li><strong>5 Recovery Dice</strong> (+ 1 TimeLord bonus die) &mdash; Used for article recovery missions</li>
+  <li><strong>Travel Dice</strong> &mdash; Up to 10 dice used for time travel attempts (4 core + conditional bonus dice including Portal, Adjacent, TimeLord, Hazard, Age, and Alpha)</li>
+  <li><strong>Recovery Dice</strong> &mdash; Up to 8 dice used for article recovery missions (5 core + conditional bonus dice including TimeLord, Hazard, and Alpha)</li>
 </ul>
 
 <h3>Event Cards</h3>
@@ -604,11 +606,13 @@
   <tr><td class="center"><span class="die-green">Green</span></td><td>Base Time</td><td>1, 1, 1, 1, 0, &#9733;</td><td>Always required (must show "1")</td></tr>
   <tr><td class="center"><span class="die-black">Black</span></td><td>Direction</td><td>2, 2, 3, X, 0, &#9733;</td><td>Direction: 2=past, 3=future; X=skull</td></tr>
   <tr><td class="center"><span class="die-white">White</span></td><td>Planet</td><td>5, 5, 4, X, 0, &#9733;</td><td>5=Earth location, 4=off-world (space/moon)</td></tr>
-  <tr><td class="center"><span class="die-orange">Orange</span></td><td>Ring</td><td>6, 6, 7, 8, 9, 0</td><td>Must match destination's ring (6=R3, 7=R2, 8=R1, 9=Vortex)</td></tr>
+  <tr><td class="center"><span class="die-orange">Orange</span></td><td>Ring</td><td>6, 6, 7, 8, X, 0</td><td>Must match destination's ring (6=R3, 7=R2, 8=R1); X=skull. Vortex (Ring 0) has no dedicated face &mdash; requires wilds.</td></tr>
   <tr><td class="center"><span class="die-blue">Blue</span></td><td>Portal</td><td>&#9733;, &#9733;, &#9733;, &#9733;, 0, X</td><td>Bonus die if destination is an active portal</td></tr>
   <tr><td class="center"><span class="die-yellow">Yellow</span></td><td>Adjacent</td><td>!, !, &#9733;, &#9733;, 0, &#9733;</td><td>Bonus die if adjacent; ! = negate (cancels one skull)</td></tr>
   <tr><td class="center"><span class="die-tl">TL</span></td><td>TimeLord</td><td>&#9733;, &#9733;, &#9733;, &#9733;, 0, 0</td><td>Bonus die (TimeLord agents only)</td></tr>
   <tr><td class="center"><span class="die-hazard">Hazard</span></td><td>Baal</td><td>+, +, 0, 0, 0, 0</td><td>Penalty die when timeline &le; &minus;6 (non-TimeLords only); + = Time Travel Sickness (miss next turn)</td></tr>
+  <tr><td class="center" style="color:#7c3aed">Purple</td><td>Age</td><td>&#x2191;, &#x2193;, 0, 0, 0, 0</td><td>Always included for all agents (including TimeLords). &#x2191; = ageing check, &#x2193; = sickness check. See <a href="#sec-aging">Aging</a>.</td></tr>
+  <tr><td class="center" style="color:#7c3aed">Purple</td><td>Alpha</td><td>&#9733;, &#9733;, 0, 0, 0, 0</td><td>Bonus die for AutoAlpha variant agents only; 2 wilds, 4 blanks</td></tr>
 </table>
 
 <h3>Special Face Values</h3>
@@ -626,17 +630,21 @@
 <h3>Travel Requirements</h3>
 <p>To successfully travel, you need to lock dice showing:</p>
 <ol>
-  <li><strong>Ring face</strong> &mdash; matching the destination ring (always required)</li>
+  <li><strong>Ring face</strong> &mdash; matching the destination ring: 6=Ring 3, 7=Ring 2, 8=Ring 1 (always required)</li>
   <li><strong>Base "1"</strong> &mdash; from the Green die (always required)</li>
   <li><strong>Planet face</strong> &mdash; matching the destination type: "5" for Earth locations, "4" for off-world (always required)</li>
   <li><strong>Direction face</strong> &mdash; "2" for travelling to the past, "3" for travelling to the future (required only if origin and destination are in different eras)</li>
 </ol>
+<blockquote><strong>Vortex note:</strong> The Ring die has no "9" face &mdash; it was replaced by a skull. Travelling to the Time Vortex (Ring 0) requires <strong>wilds</strong> to satisfy the ring requirement, making it one of the hardest destinations to reach.</blockquote>
 
-<h3>Bonus Dice</h3>
+<h3>Bonus &amp; Conditional Dice</h3>
 <ul>
-  <li><strong>Portal die (Blue):</strong> Added if the destination is an active portal. All faces are wilds or blanks &mdash; pure bonus.</li>
-  <li><strong>Adjacent die (Yellow):</strong> Added if the destination is exactly 1 hex away. All faces are wilds or blanks &mdash; pure bonus.</li>
+  <li><strong>Portal die (Blue):</strong> Added if the destination is an active portal. Mostly wilds &mdash; pure bonus.</li>
+  <li><strong>Adjacent die (Yellow):</strong> Added if the destination is exactly 1 hex away. Wilds and negates &mdash; pure bonus.</li>
   <li><strong>TimeLord die (TL):</strong> Added if the travelling agent is a TimeLord. Mostly wilds &mdash; significant advantage.</li>
+  <li><strong>Age die (Purple):</strong> Always included for all agents. Does not contribute to travel requirements &mdash; resolved separately for aging/sickness checks (see <a href="#sec-aging">Aging</a>).</li>
+  <li><strong>Hazard die (Baal):</strong> Added when timeline &le; &minus;6, for non-TimeLord agents only (see above).</li>
+  <li><strong>Alpha die (Purple):</strong> Added for AutoAlpha variant agents only. 2 wilds, 4 blanks.</li>
 </ul>
 
 <h3>Rolling Procedure</h3>
@@ -651,6 +659,42 @@
   <li>If all requirements are met &rarr; <strong>Success!</strong> Agent moves to destination</li>
   <li>If not &rarr; <strong>Failure.</strong> Agent stays at current location</li>
 </ol>
+
+<h3 id="sec-aging">Aging &amp; Sickness (Age Die)</h3>
+<p>The <strong>Age die</strong> (purple) is included in <strong>every travel roll</strong> for all agents, including TimeLords. It has 1 ageing face (&#x2191;), 1 sickness face (&#x2193;), and 4 blanks. The Age die does not contribute to travel requirements &mdash; it is resolved separately.</p>
+
+<h4>Age Progression</h4>
+<p>Each agent tracks an <strong>age state</strong> that progresses through four stages:</p>
+<p><strong>Child &rarr; Youth (starting age) &rarr; Adult &rarr; Old</strong></p>
+
+<h4>Ageing Face (&#x2191;)</h4>
+<p>When the &#x2191; face appears, roll <strong>1d6</strong>:</p>
+<table>
+  <tr><th class="center">d6</th><th>Result</th></tr>
+  <tr><td class="center">1</td><td><strong>Age up</strong> &mdash; agent moves one step toward Old (e.g. Youth &rarr; Adult)</td></tr>
+  <tr><td class="center">2</td><td><strong>De-age</strong> &mdash; agent moves one step toward Child (e.g. Adult &rarr; Youth)</td></tr>
+  <tr><td class="center">3&ndash;6</td><td>No effect</td></tr>
+</table>
+
+<h4>Sickness Face (&#x2193;)</h4>
+<p>When the &#x2193; face appears, roll <strong>1d6</strong>:</p>
+<table>
+  <tr><th class="center">d6</th><th>Result</th></tr>
+  <tr><td class="center">1&ndash;2</td><td><strong>Time Sickness</strong> &mdash; agent misses their next turn</td></tr>
+  <tr><td class="center">3&ndash;6</td><td>No effect</td></tr>
+</table>
+
+<h4>Zerotime (Age Overflow)</h4>
+<p>If an agent is already at <strong>Old</strong> and ages up, or is already at <strong>Child</strong> and de-ages, they enter <strong>Zerotime</strong> &mdash; a temporal overflow state. When this happens:</p>
+<ul>
+  <li>The agent's turn <strong>ends immediately</strong> (all remaining agents for that player also lose their actions for the turn)</li>
+  <li>At the start of the player's <strong>next turn</strong>, the agent automatically resets to <strong>Youth</strong></li>
+</ul>
+
+<blockquote><strong>Note:</strong> Zerotime does not kill the agent &mdash; it is a temporary state. However, the turn-ending penalty is severe since it affects <em>all</em> of the player's remaining agents for that turn, not just the one who overflowed.</blockquote>
+
+<h4>Archetype Avatars</h4>
+<p>When using <strong>Archetype avatars</strong> (an avatar option), agents do not track age. Instead, any non-blank Age die face automatically triggers a <strong>miss-a-turn</strong> penalty with no d6 check.</p>
 
 <h3>Travel Events</h3>
 <p>If a skull (X) face appears during travel, a <strong>Travel Event Card</strong> may be drawn (see Section 14).</p>
@@ -686,12 +730,13 @@
 
 <h3>Recovery Templates</h3>
 <table>
-  <tr><th>Template</th><th>Factors</th><th>Used By</th></tr>
-  <tr><td>Crystal</td><td>C, M, P, S</td><td>All crystals</td></tr>
-  <tr><td>Key Artifact</td><td>A, H, M, P</td><td>Major artifacts (Excalibur, Staff of Osiris, etc.)</td></tr>
-  <tr><td>Minor Artifact</td><td>A, P, S</td><td>Minor artifacts (King Solomon's Ring, Seal of Solomon, etc.)</td></tr>
-  <tr><td>Major Item</td><td>A, H, M, S</td><td>Complex items (Crown Jewels, Henry VIII Armour, etc.)</td></tr>
-  <tr><td>Minor Item</td><td>M, P, S</td><td>Simple items (Maltese Falcon, Babylonian Tablet, etc.)</td></tr>
+  <tr><th>Template</th><th>Factors</th><th class="center">&#11088;</th><th class="center">&#11035;</th><th>Used By</th></tr>
+  <tr><td>Minor Item</td><td>M, P, S</td><td class="center">4</td><td class="center">1</td><td>Antikythera, Da Vinci's Compass, Henry VIII Armour, Maltese Falcon, Shakespeare's Quill, Viking Runestone</td></tr>
+  <tr><td>Major Item</td><td>A, H, M, S</td><td class="center">5</td><td class="center">2</td><td>Babylonian Tablet, Schr&ouml;dinger's Cat, Shambhala Passport, Tesla's Coil Fragment, Tesseract Cube</td></tr>
+  <tr><td>All Factors</td><td>A, C, H, M, P, S</td><td class="center">8</td><td class="center">2</td><td>The Crown Jewels</td></tr>
+  <tr><td>Crystal</td><td>C, M, P, S</td><td class="center">3</td><td class="center">1</td><td>All 12 crystals</td></tr>
+  <tr><td>Key Artifact</td><td>A, H, M, P</td><td class="center">6</td><td class="center">&mdash;</td><td>Arc of Covenant, Devil's Chair, Excalibur Sword, Holy Grail</td></tr>
+  <tr><td>Minor Artifact</td><td>A, P, S</td><td class="center">4</td><td class="center">&mdash;</td><td>Chintamani Stone, Crystal Skull, Jade Monkey, King Solomon's Ring, Nefertiti's Amulet, Seal of Solomon, Spear of Destiny, Staff of Osiris</td></tr>
 </table>
 
 <h3>Rolling Procedure</h3>
@@ -725,19 +770,19 @@
 <p>Historical curiosities scattered to random past-era Time Locations at game start. When recovered, items are carried by the agent and must be brought back to HQ to be <strong>restored</strong> (deposited). Restoring an item at HQ awards its <strong>Kairos (&#11088;)</strong> value, removes its <strong>Blot (&#11035;)</strong> value, and reduces the <strong>Paradox counter by 1</strong>.</p>
 
 <table>
-  <tr><th>Item</th><th class="center">&#11088; Kairos</th><th class="center">&#11035; Blots</th><th>Required Factors</th></tr>
-  <tr><td>Antikythera</td><td class="center">2</td><td class="center">1</td><td>A, S, M</td></tr>
-  <tr><td>Babylonian Tablet</td><td class="center">2</td><td class="center">1</td><td>S, P, M</td></tr>
-  <tr><td>Crown Jewels</td><td class="center">4</td><td class="center">1</td><td>A, S, P, M, H</td></tr>
-  <tr><td>Da Vinci's Compass</td><td class="center">2</td><td class="center">1</td><td>S, P, H</td></tr>
-  <tr><td>Henry VIII Armour</td><td class="center">3</td><td class="center">1</td><td>A, S, M, H</td></tr>
-  <tr><td>Maltese Falcon</td><td class="center">2</td><td class="center">1</td><td>A, S, P</td></tr>
-  <tr><td>Schr&ouml;dinger's Cat</td><td class="center">2</td><td class="center">1</td><td>A, S, P</td></tr>
-  <tr><td>Shakespeare's Quill</td><td class="center">2</td><td class="center">1</td><td>S, M, H</td></tr>
-  <tr><td>Shambhala Passport</td><td class="center">2</td><td class="center">1</td><td>A, P, M</td></tr>
-  <tr><td>Tesla's Coil Fragment</td><td class="center">2</td><td class="center">1</td><td>C, M, H</td></tr>
-  <tr><td>Tesseract Cube</td><td class="center">4</td><td class="center">1</td><td>A, S, C, M, H</td></tr>
-  <tr><td>Viking Runestone</td><td class="center">2</td><td class="center">1</td><td>A, S, H</td></tr>
+  <tr><th>Item</th><th class="center">&#11088; Kairos</th><th class="center">&#11035; Blots</th><th>Template</th><th>Required Factors</th></tr>
+  <tr><td>Antikythera</td><td class="center">4</td><td class="center">1</td><td>Minor</td><td>M, P, S</td></tr>
+  <tr><td>Babylonian Tablet</td><td class="center">5</td><td class="center">2</td><td>Major</td><td>A, H, M, S</td></tr>
+  <tr><td>Da Vinci's Compass</td><td class="center">4</td><td class="center">1</td><td>Minor</td><td>M, P, S</td></tr>
+  <tr><td>Henry VIII Armour</td><td class="center">4</td><td class="center">1</td><td>Minor</td><td>M, P, S</td></tr>
+  <tr><td>Maltese Falcon</td><td class="center">4</td><td class="center">1</td><td>Minor</td><td>M, P, S</td></tr>
+  <tr><td>Schr&ouml;dinger's Cat</td><td class="center">5</td><td class="center">2</td><td>Major</td><td>A, H, M, S</td></tr>
+  <tr><td>Shakespeare's Quill</td><td class="center">4</td><td class="center">1</td><td>Minor</td><td>M, P, S</td></tr>
+  <tr><td>Shambhala Passport</td><td class="center">5</td><td class="center">2</td><td>Major</td><td>A, H, M, S</td></tr>
+  <tr><td>Tesla's Coil Fragment</td><td class="center">5</td><td class="center">2</td><td>Major</td><td>A, H, M, S</td></tr>
+  <tr><td>The Crown Jewels</td><td class="center">8</td><td class="center">2</td><td>All</td><td>A, C, H, M, P, S</td></tr>
+  <tr><td>Tesseract Cube</td><td class="center">5</td><td class="center">2</td><td>Major</td><td>A, H, M, S</td></tr>
+  <tr><td>Viking Runestone</td><td class="center">4</td><td class="center">1</td><td>Minor</td><td>M, P, S</td></tr>
 </table>
 
 <h3>Crystals (12 total)</h3>
@@ -745,37 +790,37 @@
 
 <table>
   <tr><th>Crystal</th><th class="center">&#11088; Kairos</th><th class="center">&#11035; Blots</th><th>Required Factors</th><th>Location</th></tr>
-  <tr><td>Amethyst</td><td class="center">2</td><td class="center">1</td><td>A, S, C</td><td>Mt Fuji (2157 AD)</td></tr>
-  <tr><td>Beryl</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Ganymede (2184 AD)</td></tr>
-  <tr><td>Chalcedony</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Saturn (2163 AD)</td></tr>
-  <tr><td>Chrysolite</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Venus (2183 AD)</td></tr>
-  <tr><td>Chrysoprasus</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Ceres (2124 AD)</td></tr>
-  <tr><td>Emerald</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Ceres (2125 AD)</td></tr>
-  <tr><td>Jacinth</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Neptune (2103 AD)</td></tr>
-  <tr><td>Jasper</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Venus (2153 AD)</td></tr>
-  <tr><td>Sapphire</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Ganymede (2154 AD)</td></tr>
-  <tr><td>Sardius</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Mt Shasta (2164 AD)</td></tr>
-  <tr><td>Sardonyx</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Neptune (2169 AD)</td></tr>
-  <tr><td>Topaz</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Saturn (2133 AD)</td></tr>
+  <tr><td>Amethyst</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Mt Fuji (2157 AD)</td></tr>
+  <tr><td>Beryl</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Ganymede (2184 AD)</td></tr>
+  <tr><td>Chalcedony</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Saturn Rings (2163 AD)</td></tr>
+  <tr><td>Chrysolite</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Venus (2183 AD)</td></tr>
+  <tr><td>Chrysoprasus</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Ceres (2124 AD)</td></tr>
+  <tr><td>Emerald</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Ceres (2125 AD)</td></tr>
+  <tr><td>Jacinth</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Neptune (2103 AD)</td></tr>
+  <tr><td>Jasper</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Venus (2153 AD)</td></tr>
+  <tr><td>Sapphire</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Ganymede (2154 AD)</td></tr>
+  <tr><td>Sardius</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Mt Shasta (2164 AD)</td></tr>
+  <tr><td>Sardonyx</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Neptune (2169 AD)</td></tr>
+  <tr><td>Topaz</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Saturn Rings (2133 AD)</td></tr>
 </table>
 
 <h3>Artifacts (12 total)</h3>
 <p>Legendary relics of immense power. Artifacts start at their correct Time Location. Unlike items and crystals, artifacts are NOT carried &mdash; they are <strong>guarded</strong> in place after successful recovery. Guarding an artifact awards its <strong>Kairos (&#11088;)</strong> value, protects it from Kronos' theft attempts, and is one of the two prerequisites for TimeLord upgrades.</p>
 
 <table>
-  <tr><th>Artifact</th><th class="center">&#11088; Kairos</th><th>Required Factors</th><th>Location</th></tr>
-  <tr><td>Arc of Covenant</td><td class="center">3</td><td>A, S, M</td><td>Giza Pyramids (2108 BC)</td></tr>
-  <tr><td>Chintamani Stone</td><td class="center">2</td><td>C, H</td><td>Lhasa (1275 AD)</td></tr>
-  <tr><td>Crystal Skull</td><td class="center">4</td><td>A, S, P, M</td><td>Mesoamerica (1520 AD)</td></tr>
-  <tr><td>Devil's Chair</td><td class="center">3</td><td>M, S, P</td><td>Pergamon (1941 AD)</td></tr>
-  <tr><td>Excalibur Sword</td><td class="center">4</td><td>A, H, P, M</td><td>Glastonbury (512 AD)</td></tr>
-  <tr><td>Holy Grail</td><td class="center">3</td><td>H, C, M</td><td>South of France (78 AD)</td></tr>
-  <tr><td>Jade Monkey</td><td class="center">3</td><td>A, C, M</td><td>Xian (221 BC)</td></tr>
-  <tr><td>King Solomon's Ring</td><td class="center">2</td><td>A, S</td><td>Jerusalem (612 BC)</td></tr>
-  <tr><td>Nefertiti's Amulet</td><td class="center">2</td><td>S, H</td><td>Akhetaten (1330 BC)</td></tr>
-  <tr><td>Seal of Solomon</td><td class="center">2</td><td>S, H</td><td>Jerusalem (970 BC)</td></tr>
-  <tr><td>Spear of Destiny</td><td class="center">3</td><td>S, P, M</td><td>Jerusalem (33 AD)</td></tr>
-  <tr><td>Staff of Osiris</td><td class="center">4</td><td>A, P, M, H</td><td>Thebes (1250 BC)</td></tr>
+  <tr><th>Artifact</th><th class="center">&#11088; Kairos</th><th>Template</th><th>Required Factors</th><th>Location</th></tr>
+  <tr><td>Arc of Covenant</td><td class="center">6</td><td>Key</td><td>A, H, M, P</td><td>Giza Pyramids (2108 BC)</td></tr>
+  <tr><td>Chintamani Stone</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Lhasa (1275 AD)</td></tr>
+  <tr><td>Crystal Skull</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Mesoamerica (1520 AD)</td></tr>
+  <tr><td>Devil's Chair</td><td class="center">6</td><td>Key</td><td>A, H, M, P</td><td>Pergamon (1941 AD)</td></tr>
+  <tr><td>Excalibur Sword</td><td class="center">6</td><td>Key</td><td>A, H, M, P</td><td>Glastonbury (512 AD)</td></tr>
+  <tr><td>Holy Grail</td><td class="center">6</td><td>Key</td><td>A, H, M, P</td><td>South of France (78 AD)</td></tr>
+  <tr><td>Jade Monkey</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Xian (221 BC)</td></tr>
+  <tr><td>King Solomon's Ring</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Jerusalem (612 BC)</td></tr>
+  <tr><td>Nefertiti's Amulet</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Akhetaten (1330 BC)</td></tr>
+  <tr><td>Seal of Solomon</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Jerusalem (970 BC)</td></tr>
+  <tr><td>Spear of Destiny</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Jerusalem (33 AD)</td></tr>
+  <tr><td>Staff of Osiris</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Thebes (1250 BC)</td></tr>
 </table>
 
 <h3>Restoring Articles at HQ</h3>
@@ -1226,6 +1271,11 @@
   <tr><td>Agent XP: guard/deposit/restore</td><td class="center">+article's &#11088; Kairos value</td></tr>
   <tr><td>Agent XP: empower crystal</td><td class="center">+1</td></tr>
   <tr><td>Hazard die trigger</td><td class="center">Timeline &le; &minus;6 (non-TimeLords only)</td></tr>
+  <tr><td>Age die</td><td class="center">Always included (all agents). &#x2191; = age check, &#x2193; = sickness check</td></tr>
+  <tr><td>Age progression</td><td class="center">Child &rarr; Youth (start) &rarr; Adult &rarr; Old &rarr; Zerotime (overflow)</td></tr>
+  <tr><td>Ageing check (&#x2191;) d6</td><td class="center">1 = age up, 2 = de-age, 3&ndash;6 = nothing</td></tr>
+  <tr><td>Sickness check (&#x2193;) d6</td><td class="center">1&ndash;2 = miss next turn, 3&ndash;6 = nothing</td></tr>
+  <tr><td>Zerotime penalty</td><td class="center">Player's entire turn ends; agent resets to Youth next turn</td></tr>
   <tr><td>Empower crystal reward</td><td class="center">+1&#11088; (and -1&#11035; if paired artifact in Kronos)</td></tr>
   <tr><td>Nerf roll: fresh crystal</td><td class="center">2d6 &ge; 4 (92%)</td></tr>
   <tr><td>Nerf roll: depleted (3)</td><td class="center">2d6 &minus; 3 &ge; 4 (58%)</td></tr>
@@ -1328,9 +1378,9 @@
 <h2 id="sec-23"><span class="section-num">23.</span> Articles Reference</h2>
 
 <h3>Recovery Factor Key</h3>
-<p><strong>A</strong> = Archivist &middot; <strong>S</strong> = Security &middot; <strong>C</strong> = Cryptohacker &middot; <strong>P</strong> = Psychotronics &middot; <strong>M</strong> = Medical &middot; <strong>H</strong> = Historian</p>
+<p><strong>A</strong> = Archaeology &middot; <strong>S</strong> = Security &middot; <strong>C</strong> = Cyber &middot; <strong>P</strong> = Psychic &middot; <strong>M</strong> = Medical &middot; <strong>H</strong> = Historian</p>
 
-<p>See the <a href="#article-gallery">Article Gallery</a> below for all 36 articles with images, stats, and recovery requirements.</p>
+<p>See the <a href="#article-gallery">Article Gallery</a> below for all 36 articles with images, stats, and recovery requirements, or the <a href="#sec-27">Dice Reference</a> appendix for full recovery factor descriptions.</p>
 
 <hr>
 
@@ -1377,6 +1427,9 @@
   <tr><td><strong>Wild (&#9733;)</strong></td><td>A dice face that can substitute for any requirement (only on final roll for recovery).</td></tr>
   <tr><td><strong>Wiped</strong></td><td>An agent destroyed (e.g., Vortex failure or Plasma Confinement event). Permanently out of the game.</td></tr>
   <tr><td><strong>Xanadu</strong></td><td>The time police organisation that runs the Jail.</td></tr>
+  <tr><td><strong>Age Die</strong></td><td>A purple die included in every travel roll. Has 1 ageing face (&#x2191;), 1 sickness face (&#x2193;), and 4 blanks. Does not contribute to travel requirements.</td></tr>
+  <tr><td><strong>Zerotime</strong></td><td>Temporal overflow state triggered when an agent ages past Old or de-ages past Child. Ends the player's turn immediately; agent resets to Youth at start of next turn.</td></tr>
+  <tr><td><strong>Age State</strong></td><td>Each agent's current age: Child &rarr; Youth (default) &rarr; Adult &rarr; Old. Changed by the Age die's ageing face during travel.</td></tr>
 </table>
 
 <hr>
@@ -1489,9 +1542,73 @@
 
 <hr>
 
+<!-- SECTION 27: DICE REFERENCE APPENDIX -->
+<h2 id="sec-27"><span class="section-num">27.</span> Appendix A &mdash; Dice Reference</h2>
+<p>Complete face listings for every die in the game. See Section 7 for travel rules and Section 8 for recovery rules.</p>
+
+<h3>Travel Dice Face Legend</h3>
+<table>
+  <tr><th class="center">Symbol</th><th>Meaning</th></tr>
+  <tr><td class="center"><strong>1&ndash;9</strong></td><td>Numeric value &mdash; must match a travel requirement (ring, base, planet, direction)</td></tr>
+  <tr><td class="center"><strong>&#9733;</strong></td><td>Wild &mdash; substitutes for any one requirement (assigned on final roll)</td></tr>
+  <tr><td class="center"><strong>X</strong></td><td>Skull &mdash; auto-locks; 2+ skulls = instant travel failure</td></tr>
+  <tr><td class="center"><strong>!</strong></td><td>Negate &mdash; cancels one locked skull (both dice unlocked for re-roll)</td></tr>
+  <tr><td class="center"><strong>+</strong></td><td>Hazard cross &mdash; triggers Time Travel Sickness (miss next turn)</td></tr>
+  <tr><td class="center"><strong>&#x2191;</strong></td><td>Ageing check &mdash; roll d6 to determine age change (see Aging)</td></tr>
+  <tr><td class="center"><strong>&#x2193;</strong></td><td>Sickness check &mdash; roll d6 for possible Time Sickness (see Aging)</td></tr>
+  <tr><td class="center"><strong>0</strong></td><td>Blank &mdash; no effect</td></tr>
+</table>
+
+<h3>Travel Dice (all faces)</h3>
+<table>
+  <tr><th>Die</th><th>Colour</th><th>When Included</th><th class="center">Face 1</th><th class="center">Face 2</th><th class="center">Face 3</th><th class="center">Face 4</th><th class="center">Face 5</th><th class="center">Face 6</th></tr>
+  <tr><td><strong>Ring</strong></td><td><span class="die-orange">Orange</span></td><td>Always</td><td class="center">6</td><td class="center">6</td><td class="center">7</td><td class="center">8</td><td class="center">X</td><td class="center">0</td></tr>
+  <tr><td><strong>Direction</strong></td><td><span class="die-black">Black</span></td><td>Always</td><td class="center">2</td><td class="center">2</td><td class="center">3</td><td class="center">X</td><td class="center">0</td><td class="center">&#9733;</td></tr>
+  <tr><td><strong>Base</strong></td><td><span class="die-green">Green</span></td><td>Always</td><td class="center">1</td><td class="center">1</td><td class="center">1</td><td class="center">1</td><td class="center">0</td><td class="center">&#9733;</td></tr>
+  <tr><td><strong>Planet</strong></td><td><span class="die-white">White</span></td><td>Always</td><td class="center">5</td><td class="center">5</td><td class="center">4</td><td class="center">X</td><td class="center">0</td><td class="center">&#9733;</td></tr>
+  <tr><td><strong>Age</strong></td><td style="color:#7c3aed">Purple</td><td>Always (all agents)</td><td class="center">&#x2191;</td><td class="center">&#x2193;</td><td class="center">0</td><td class="center">0</td><td class="center">0</td><td class="center">0</td></tr>
+  <tr><td><strong>Portal</strong></td><td><span class="die-blue">Blue</span></td><td>Destination is a portal</td><td class="center">&#9733;</td><td class="center">&#9733;</td><td class="center">&#9733;</td><td class="center">&#9733;</td><td class="center">0</td><td class="center">X</td></tr>
+  <tr><td><strong>Adjacent</strong></td><td><span class="die-yellow">Yellow</span></td><td>Destination is 1 hex away</td><td class="center">!</td><td class="center">!</td><td class="center">&#9733;</td><td class="center">&#9733;</td><td class="center">0</td><td class="center">&#9733;</td></tr>
+  <tr><td><strong>TimeLord</strong></td><td><span class="die-tl">Teal</span></td><td>Agent is a TimeLord</td><td class="center">&#9733;</td><td class="center">&#9733;</td><td class="center">&#9733;</td><td class="center">&#9733;</td><td class="center">0</td><td class="center">0</td></tr>
+  <tr><td><strong>Hazard</strong></td><td><span class="die-hazard">Red</span></td><td>Timeline &le; &minus;6 (non-TimeLords)</td><td class="center">+</td><td class="center">+</td><td class="center">0</td><td class="center">0</td><td class="center">0</td><td class="center">0</td></tr>
+  <tr><td><strong>Alpha</strong></td><td style="color:#7c3aed">Purple</td><td>AutoAlpha agents only</td><td class="center">&#9733;</td><td class="center">&#9733;</td><td class="center">0</td><td class="center">0</td><td class="center">0</td><td class="center">0</td></tr>
+</table>
+
+<h3>Recovery Dice Face Legend</h3>
+<table>
+  <tr><th class="center">Symbol</th><th>Meaning</th></tr>
+  <tr><td class="center"><strong>A</strong></td><td>Archaeology &mdash; archival and excavation expertise</td></tr>
+  <tr><td class="center"><strong>S</strong></td><td>Security &mdash; physical protection and defence</td></tr>
+  <tr><td class="center"><strong>C</strong></td><td>Cyber &mdash; cyber security and code-breaking</td></tr>
+  <tr><td class="center"><strong>P</strong></td><td>Psychic &mdash; psychic defence and mental warfare</td></tr>
+  <tr><td class="center"><strong>M</strong></td><td>Medical &mdash; medical support and emergency care</td></tr>
+  <tr><td class="center"><strong>H</strong></td><td>Historian &mdash; historical research and cultural knowledge</td></tr>
+  <tr><td class="center"><strong>&#9733;</strong></td><td>Wild &mdash; substitutes for any required factor (assigned on final roll)</td></tr>
+  <tr><td class="center"><strong>$</strong></td><td>Event &mdash; draw a Recovery Event card</td></tr>
+  <tr><td class="center"><strong>0</strong></td><td>Blank &mdash; no effect</td></tr>
+</table>
+
+<h3>Recovery Dice (all faces)</h3>
+<table>
+  <tr><th>Die</th><th>Colour</th><th>When Included</th><th class="center">Face 1</th><th class="center">Face 2</th><th class="center">Face 3</th><th class="center">Face 4</th><th class="center">Face 5</th><th class="center">Face 6</th></tr>
+  <tr><td><strong>Red</strong></td><td><span class="die-red">Red</span></td><td>Always</td><td class="center">A</td><td class="center">S</td><td class="center">C</td><td class="center">P</td><td class="center">M</td><td class="center">$</td></tr>
+  <tr><td><strong>Blue</strong></td><td><span class="die-blue">Blue</span></td><td>Always</td><td class="center">A</td><td class="center">S</td><td class="center">C</td><td class="center">P</td><td class="center">$</td><td class="center">H</td></tr>
+  <tr><td><strong>Green</strong></td><td><span class="die-green">Green</span></td><td>Always</td><td class="center">A</td><td class="center">S</td><td class="center">C</td><td class="center">P</td><td class="center">&#9733;</td><td class="center">H</td></tr>
+  <tr><td><strong>Black</strong></td><td><span class="die-black">Black</span></td><td>Always</td><td class="center">&#9733;</td><td class="center">S</td><td class="center">C</td><td class="center">P</td><td class="center">$</td><td class="center">H</td></tr>
+  <tr><td><strong>White</strong></td><td><span class="die-white">White</span></td><td>Always</td><td class="center">A</td><td class="center">S</td><td class="center">C</td><td class="center">P</td><td class="center">M</td><td class="center">&#9733;</td></tr>
+  <tr><td><strong>TimeLord</strong></td><td><span class="die-tl">Teal</span></td><td>Agent is a TimeLord</td><td class="center">M</td><td class="center">C</td><td class="center">P</td><td class="center">H</td><td class="center">&#9733;</td><td class="center">&#9733;</td></tr>
+  <tr><td><strong>Alpha</strong></td><td style="color:#7c3aed">Purple</td><td>AutoAlpha agents only</td><td class="center">&#9733;</td><td class="center">&#9733;</td><td class="center">0</td><td class="center">0</td><td class="center">0</td><td class="center">0</td></tr>
+</table>
+
+<div class="section-note" style="margin-top:18px; border-left: 2px solid var(--gold-dim);">
+<strong>Factor coverage note:</strong> No single core die has all 6 factors. Medical (M) appears only on Red and White; Historian (H) appears only on Blue, Green, and Black; Archaeology (A) is absent from Black. The TimeLord bonus die fills gaps with M, C, P, H plus 2 wilds. Articles requiring 5&ndash;6 factors (Crown Jewels, Key Artifacts) are significantly harder to recover without a TimeLord or lucky wilds.
+</div>
+
+<hr>
+
 <!-- ARTICLE GALLERY -->
 <h2 id="article-gallery"><span class="section-num">&bull;</span> Article Gallery</h2>
-<p>All 36 articles in the game. <strong>A</strong> = Archivist &middot; <strong>S</strong> = Security &middot; <strong>C</strong> = Cryptohacker &middot; <strong>P</strong> = Psychotronics &middot; <strong>M</strong> = Medical &middot; <strong>H</strong> = Historian</p>
+<p>All 36 articles in the game. <strong>A</strong> = Archaeology &middot; <strong>S</strong> = Security &middot; <strong>C</strong> = Cyber &middot; <strong>P</strong> = Psychic &middot; <strong>M</strong> = Medical &middot; <strong>H</strong> = Historian</p>
 
 <h3>Artifacts &mdash; Guarded at their location to protect from Kronos</h3>
 <div class="gallery">
@@ -1499,7 +1616,7 @@
     <img src="ART100.png" alt="Arc of Covenant" loading="lazy">
     <div class="card-info">
       <div class="card-title">Arc of Covenant</div>
-      <div class="card-date">&#11088;6 &middot; A H M P</div>
+      <div class="card-date">&#11088;6 &middot; A H M P &middot; Key</div>
       <div class="card-article">Giza Pyramids (2108 BC)</div>
     </div>
   </div>
@@ -1507,7 +1624,7 @@
     <img src="ART101.png" alt="Holy Grail" loading="lazy">
     <div class="card-info">
       <div class="card-title">Holy Grail</div>
-      <div class="card-date">&#11088;6 &middot; A H M P</div>
+      <div class="card-date">&#11088;6 &middot; A H M P &middot; Key</div>
       <div class="card-article">South of France (78 AD)</div>
     </div>
   </div>
@@ -1515,7 +1632,7 @@
     <img src="ART108.png" alt="Excalibur Sword" loading="lazy">
     <div class="card-info">
       <div class="card-title">Excalibur Sword</div>
-      <div class="card-date">&#11088;6 &middot; A H M P</div>
+      <div class="card-date">&#11088;6 &middot; A H M P &middot; Key</div>
       <div class="card-article">Glastonbury (512 AD)</div>
     </div>
   </div>
@@ -1523,7 +1640,7 @@
     <img src="ART105.png" alt="Devil's Chair" loading="lazy">
     <div class="card-info">
       <div class="card-title">Devil's Chair</div>
-      <div class="card-date">&#11088;6 &middot; A H M P</div>
+      <div class="card-date">&#11088;6 &middot; A H M P &middot; Key</div>
       <div class="card-article">Pergamon (1941 AD)</div>
     </div>
   </div>
@@ -1531,7 +1648,7 @@
     <img src="ART200.png" alt="Staff of Osiris" loading="lazy">
     <div class="card-info">
       <div class="card-title">Staff of Osiris</div>
-      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-date">&#11088;4 &middot; A P S &middot; Minor</div>
       <div class="card-article">Thebes (1250 BC)</div>
     </div>
   </div>
@@ -1539,7 +1656,7 @@
     <img src="ART204.png" alt="Crystal Skull" loading="lazy">
     <div class="card-info">
       <div class="card-title">Crystal Skull</div>
-      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-date">&#11088;4 &middot; A P S &middot; Minor</div>
       <div class="card-article">Mesoamerica (1520 AD)</div>
     </div>
   </div>
@@ -1547,7 +1664,7 @@
     <img src="ART102.png" alt="King Solomon's Ring" loading="lazy">
     <div class="card-info">
       <div class="card-title">King Solomon's Ring</div>
-      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-date">&#11088;4 &middot; A P S &middot; Minor</div>
       <div class="card-article">Jerusalem (612 BC)</div>
     </div>
   </div>
@@ -1555,7 +1672,7 @@
     <img src="ART110.png" alt="Spear of Destiny" loading="lazy">
     <div class="card-info">
       <div class="card-title">Spear of Destiny</div>
-      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-date">&#11088;4 &middot; A P S &middot; Minor</div>
       <div class="card-article">Jerusalem (33 AD)</div>
     </div>
   </div>
@@ -1563,7 +1680,7 @@
     <img src="ART206.png" alt="Seal of Solomon" loading="lazy">
     <div class="card-info">
       <div class="card-title">Seal of Solomon</div>
-      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-date">&#11088;4 &middot; A P S &middot; Minor</div>
       <div class="card-article">Jerusalem (970 BC)</div>
     </div>
   </div>
@@ -1571,7 +1688,7 @@
     <img src="ART207.png" alt="Nefertiti's Amulet" loading="lazy">
     <div class="card-info">
       <div class="card-title">Nefertiti's Amulet</div>
-      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-date">&#11088;4 &middot; A P S &middot; Minor</div>
       <div class="card-article">Akhetaten (1330 BC)</div>
     </div>
   </div>
@@ -1579,7 +1696,7 @@
     <img src="ART205.png" alt="Chintamani Stone" loading="lazy">
     <div class="card-info">
       <div class="card-title">Chintamani Stone</div>
-      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-date">&#11088;4 &middot; A P S &middot; Minor</div>
       <div class="card-article">Lhasa (1275 AD)</div>
     </div>
   </div>
@@ -1587,7 +1704,7 @@
     <img src="ART209.png" alt="Jade Monkey" loading="lazy">
     <div class="card-info">
       <div class="card-title">Jade Monkey</div>
-      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-date">&#11088;4 &middot; A P S &middot; Minor</div>
       <div class="card-article">Xian (221 BC)</div>
     </div>
   </div>
@@ -1599,7 +1716,7 @@
     <img src="ART112.png" alt="Jasper" loading="lazy">
     <div class="card-info">
       <div class="card-title">Jasper</div>
-      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; C M P S</div>
       <div class="card-article">Venus (2153 AD)</div>
     </div>
   </div>
@@ -1607,7 +1724,7 @@
     <img src="ART113.png" alt="Sapphire" loading="lazy">
     <div class="card-info">
       <div class="card-title">Sapphire</div>
-      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; C M P S</div>
       <div class="card-article">Ganymede (2154 AD)</div>
     </div>
   </div>
@@ -1615,7 +1732,7 @@
     <img src="ART114.png" alt="Chalcedony" loading="lazy">
     <div class="card-info">
       <div class="card-title">Chalcedony</div>
-      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; C M P S</div>
       <div class="card-article">Saturn Rings (2163 AD)</div>
     </div>
   </div>
@@ -1623,7 +1740,7 @@
     <img src="ART115.png" alt="Emerald" loading="lazy">
     <div class="card-info">
       <div class="card-title">Emerald</div>
-      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; C M P S</div>
       <div class="card-article">Ceres (2125 AD)</div>
     </div>
   </div>
@@ -1631,7 +1748,7 @@
     <img src="ART116.png" alt="Sardonyx" loading="lazy">
     <div class="card-info">
       <div class="card-title">Sardonyx</div>
-      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; C M P S</div>
       <div class="card-article">Neptune (2169 AD)</div>
     </div>
   </div>
@@ -1639,7 +1756,7 @@
     <img src="ART117.png" alt="Sardius" loading="lazy">
     <div class="card-info">
       <div class="card-title">Sardius</div>
-      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; C M P S</div>
       <div class="card-article">Mt Shasta (2164 AD)</div>
     </div>
   </div>
@@ -1647,7 +1764,7 @@
     <img src="ART118.png" alt="Chrysolite" loading="lazy">
     <div class="card-info">
       <div class="card-title">Chrysolite</div>
-      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; C M P S</div>
       <div class="card-article">Venus (2183 AD)</div>
     </div>
   </div>
@@ -1655,7 +1772,7 @@
     <img src="ART119.png" alt="Beryl" loading="lazy">
     <div class="card-info">
       <div class="card-title">Beryl</div>
-      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; C M P S</div>
       <div class="card-article">Ganymede (2184 AD)</div>
     </div>
   </div>
@@ -1663,7 +1780,7 @@
     <img src="ART120.png" alt="Topaz" loading="lazy">
     <div class="card-info">
       <div class="card-title">Topaz</div>
-      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; C M P S</div>
       <div class="card-article">Saturn Rings (2133 AD)</div>
     </div>
   </div>
@@ -1671,7 +1788,7 @@
     <img src="ART121.png" alt="Chrysoprasus" loading="lazy">
     <div class="card-info">
       <div class="card-title">Chrysoprasus</div>
-      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; C M P S</div>
       <div class="card-article">Ceres (2124 AD)</div>
     </div>
   </div>
@@ -1679,7 +1796,7 @@
     <img src="ART122.png" alt="Jacinth" loading="lazy">
     <div class="card-info">
       <div class="card-title">Jacinth</div>
-      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; C M P S</div>
       <div class="card-article">Neptune (2103 AD)</div>
     </div>
   </div>
@@ -1687,7 +1804,7 @@
     <img src="ART123.png" alt="Amethyst" loading="lazy">
     <div class="card-info">
       <div class="card-title">Amethyst</div>
-      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; C M P S</div>
       <div class="card-article">Mt Fuji (2157 AD)</div>
     </div>
   </div>
@@ -1699,7 +1816,7 @@
     <img src="ART107.png" alt="The Crown Jewels" loading="lazy">
     <div class="card-info">
       <div class="card-title">The Crown Jewels</div>
-      <div class="card-date">&#11088;8 &#11035;2 &middot; A S C P M H</div>
+      <div class="card-date">&#11088;8 &#11035;2 &middot; A C H M P S &middot; All</div>
       <div class="card-article">Tower of London (2035 AD)</div>
     </div>
   </div>
@@ -1707,7 +1824,7 @@
     <img src="ART111.png" alt="Tesseract Cube" loading="lazy">
     <div class="card-info">
       <div class="card-title">Tesseract Cube</div>
-      <div class="card-date">&#11088;6 &#11035;1 &middot; A H M P</div>
+      <div class="card-date">&#11088;5 &#11035;2 &middot; A H M S &middot; Major</div>
       <div class="card-article">Asgard (2150 AD)</div>
     </div>
   </div>
@@ -1715,7 +1832,7 @@
     <img src="ART208.png" alt="Shambhala Passport" loading="lazy">
     <div class="card-info">
       <div class="card-title">Shambhala Passport</div>
-      <div class="card-date">&#11088;6 &#11035;1 &middot; A H M S</div>
+      <div class="card-date">&#11088;5 &#11035;2 &middot; A H M S &middot; Major</div>
       <div class="card-article">Shambhala (12,345 BC)</div>
     </div>
   </div>
@@ -1723,7 +1840,7 @@
     <img src="ART103.png" alt="Henry VIII Armour" loading="lazy">
     <div class="card-info">
       <div class="card-title">Henry VIII Armour</div>
-      <div class="card-date">&#11088;4 &#11035;1 &middot; A P S</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S &middot; Minor</div>
       <div class="card-article">London (1120 AD)</div>
     </div>
   </div>
@@ -1731,15 +1848,15 @@
     <img src="ART106.png" alt="Maltese Falcon" loading="lazy">
     <div class="card-info">
       <div class="card-title">Maltese Falcon</div>
-      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S &middot; Minor</div>
       <div class="card-article">Bermuda Triangle (1955 AD)</div>
     </div>
   </div>
   <div class="gallery-card">
     <img src="ART109.png" alt="Schrodinger's Cat" loading="lazy">
     <div class="card-info">
-      <div class="card-title">Schrodinger's Cat</div>
-      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-title">Schr&ouml;dinger's Cat</div>
+      <div class="card-date">&#11088;5 &#11035;2 &middot; A H M S &middot; Major</div>
       <div class="card-article">Woodbridge UK (1980 AD)</div>
     </div>
   </div>
@@ -1747,7 +1864,7 @@
     <img src="ART201.png" alt="Da Vinci's Compass" loading="lazy">
     <div class="card-info">
       <div class="card-title">Da Vinci's Compass</div>
-      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S &middot; Minor</div>
       <div class="card-article">Florence (1503 AD)</div>
     </div>
   </div>
@@ -1755,7 +1872,7 @@
     <img src="ART202.png" alt="Tesla's Coil Fragment" loading="lazy">
     <div class="card-info">
       <div class="card-title">Tesla's Coil Fragment</div>
-      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-date">&#11088;5 &#11035;2 &middot; A H M S &middot; Major</div>
       <div class="card-article">New York (1895 AD)</div>
     </div>
   </div>
@@ -1763,7 +1880,7 @@
     <img src="ART203.png" alt="Viking Runestone" loading="lazy">
     <div class="card-info">
       <div class="card-title">Viking Runestone</div>
-      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S &middot; Minor</div>
       <div class="card-article">Nordic Village (845 AD)</div>
     </div>
   </div>
@@ -1771,7 +1888,7 @@
     <img src="ART210.png" alt="Babylonian Tablet" loading="lazy">
     <div class="card-info">
       <div class="card-title">Babylonian Tablet</div>
-      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-date">&#11088;5 &#11035;2 &middot; A H M S &middot; Major</div>
       <div class="card-article">Babylon (1750 BC)</div>
     </div>
   </div>
@@ -1779,7 +1896,7 @@
     <img src="ART211.png" alt="Antikythera" loading="lazy">
     <div class="card-info">
       <div class="card-title">Antikythera</div>
-      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S &middot; Minor</div>
       <div class="card-article">Aegean Sea (1200 BC)</div>
     </div>
   </div>
@@ -1787,7 +1904,7 @@
     <img src="ART212.png" alt="Shakespeare's Quill" loading="lazy">
     <div class="card-info">
       <div class="card-title">Shakespeare's Quill</div>
-      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S &middot; Minor</div>
       <div class="card-article">London (1599 AD)</div>
     </div>
   </div>
@@ -1797,7 +1914,7 @@
 
 <!-- IMAGE GALLERY -->
 <h2 id="gallery"><span class="section-num">&bull;</span> Time Location Gallery</h2>
-<p>All 35 Time Locations visualised. Each image depicts the destination as your agents would experience it upon arrival.</p>
+<p>All 36 Time Locations visualised. Each image depicts the destination as your agents would experience it upon arrival.</p>
 
 <div class="gallery">
   <!-- Past Era (BC) -->
@@ -2100,6 +2217,7 @@
 <footer>
   <div class="copyright">Kairos &mdash; Time Travellers &copy; Kairos Games UK. All rights reserved.</div>
   <div>BGG ID: 457265</div>
+  <div style="margin-top:6px; color:var(--gold-dim);">Rulebook v2.0 &mdash; 24 June 2026</div>
 </footer>
 
 </body>
