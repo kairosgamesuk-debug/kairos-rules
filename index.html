@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -358,10 +358,9 @@
   <span class="nav-links">
     <a href="#toc">Contents</a>
     <a href="#sec-21">Quick Ref</a>
-    <a href="#sec-aging">Aging</a>
-    <a href="articles.html">Articles</a>
-    <a href="dice.html">Dice</a>
-    <a href="locations.html">Locations</a>
+    <a href="#sec-24">Glossary</a>
+    <a href="#article-gallery">Articles</a>
+    <a href="#gallery">Locations</a>
   </span>
 </nav>
 
@@ -385,6 +384,7 @@
     <li><a href="#sec-5">Turn Structure</a></li>
     <li><a href="#sec-6">Agent Actions</a></li>
     <li><a href="#sec-7">Time Travel</a></li>
+    <li><a href="#sec-7b">Time Travel Ageing</a></li>
     <li><a href="#sec-8">Article Recovery</a></li>
     <li><a href="#sec-9">Article Types &amp; Restoring</a></li>
     <li><a href="#sec-10">TimeLord Upgrades &amp; Nerfing</a></li>
@@ -404,7 +404,6 @@
     <li><a href="#sec-24">Glossary</a></li>
     <li><a href="#sec-25">Expansion &mdash; Easter Egg Crystal</a></li>
     <li><a href="#sec-26">Expansion &mdash; Time-Travelling Dinosaurs</a></li>
-    <li><a href="dice.html">Appendix A &mdash; Dice Reference</a></li>
   </ol>
 </nav>
 
@@ -453,8 +452,8 @@
 
 <h3>Dice</h3>
 <ul>
-  <li><strong>Travel Dice</strong> &mdash; Up to 10 dice used for time travel attempts (4 core + conditional bonus dice including Portal, Adjacent, TimeLord, Hazard, Age, and Alpha)</li>
-  <li><strong>Recovery Dice</strong> &mdash; Up to 8 dice used for article recovery missions (5 core + conditional bonus dice including TimeLord, Hazard, and Alpha)</li>
+  <li><strong>6 Travel Dice</strong> (+ 1 TimeLord bonus die) &mdash; Used for time travel attempts</li>
+  <li><strong>5 Recovery Dice</strong> (+ 1 TimeLord bonus die) &mdash; Used for article recovery missions</li>
 </ul>
 
 <h3>Event Cards</h3>
@@ -482,19 +481,13 @@
 
 <table>
   <tr><th class="center">Total Seats</th><th class="center">Agents per Player</th><th class="center">Starting TimeLords</th><th class="center">Starting Blots</th><th class="center">Max Rounds (Standard)</th></tr>
-  <tr><td class="center">1</td><td class="center">12</td><td class="center">4</td><td class="center">14</td><td class="center">14</td></tr>
-  <tr><td class="center">2</td><td class="center">6</td><td class="center">2</td><td class="center">13</td><td class="center">14</td></tr>
-  <tr><td class="center">3</td><td class="center">4</td><td class="center">1</td><td class="center">12</td><td class="center">13</td></tr>
-  <tr><td class="center">4</td><td class="center">3</td><td class="center">1</td><td class="center">11</td><td class="center">13</td></tr>
+  <tr><td class="center">1</td><td class="center">12</td><td class="center">4</td><td class="center">10</td><td class="center">14</td></tr>
+  <tr><td class="center">2</td><td class="center">6</td><td class="center">2</td><td class="center">9</td><td class="center">14</td></tr>
+  <tr><td class="center">3</td><td class="center">4</td><td class="center">1</td><td class="center">9</td><td class="center">13</td></tr>
+  <tr><td class="center">4</td><td class="center">3</td><td class="center">1</td><td class="center">8</td><td class="center">13</td></tr>
 </table>
 
-<p><strong>Starting Kairos (&#11088;):</strong> Compensates for turn order disadvantage.</p>
-<ul>
-  <li>Player 1 (first to act): 0&#11088;</li>
-  <li>Player 2: 1&#11088;</li>
-  <li>Player 3: 2&#11088;</li>
-  <li>Player 4: 3&#11088;</li>
-</ul>
+<p><strong>Starting Kairos (&#11088;):</strong> All players start with 0 Kairos.</p>
 
 <h3>Initial State</h3>
 <ul>
@@ -577,8 +570,8 @@
 </ul>
 <p><strong>Ongoing effects (until end of round):</strong></p>
 <ul>
-  <li>The empowered crystal receives a <strong>+3 bonus</strong> to its Crystal Light 2d6 roll during the Kronos phase, and contributes <strong>+2 Timeline</strong> on success (instead of +1)</li>
-  <li>The paired artifact is <strong>"nerfed"</strong> &mdash; Kronos cannot steal, empower, or apply timeline control with it this round. <strong>However</strong>, nerfing requires a successful <strong>2d6 roll minus the crystal's depletion count &ge; 4</strong>. A fresh crystal has a 92% chance; a heavily depleted crystal may have as little as 17%. If the nerf roll fails, the empowerment still applies but the artifact is NOT nerfed and no blot reduction is granted (see Section 10 for full details)</li>
+  <li>The empowered crystal receives a <strong>+3 bonus</strong> to its Crystal Light 2d6 roll during the Kronos phase, and HQ crystals contribute <strong>+2 Timeline</strong> (instead of +1)</li>
+  <li>The paired artifact is <strong>"nerfed"</strong> &mdash; Kronos cannot steal, empower, or apply timeline control with it this round. <strong>However</strong>, nerfing requires a successful <strong>2d6 roll minus the artifact's depletion count &ge; 4</strong>. A fresh artifact has a 92% chance; after one nerf (+4 depletion) it drops to 42%. If the nerf roll fails, the empowerment still applies but the artifact is NOT nerfed and no blot reduction is granted (see Section 10 for full details)</li>
 </ul>
 <blockquote><strong>Important:</strong> Empowerment lasts only until the end of the current round. Crystals must be re-empowered each round to maintain the nerfing protection and Crystal Light roll bonus.</blockquote>
 
@@ -588,10 +581,13 @@
 <h3>6.7 Rescue from Lost in Time <em>(TimeLord only)</em></h3>
 <p>A TimeLord agent at HQ can rescue one allied agent that is Lost in Time. Both agents consume their turn for the round. The rescued agent returns to HQ with no penalty.</p>
 
-<h3>6.8 Escape Jail / Lost in Time</h3>
+<h3>6.8 Intel / Recon</h3>
+<p>When your agent is at a Time Location with an agent from another team, you can perform the <strong>Intel</strong> action to grant that team a one-use <strong>Intel Die</strong> (all 6 faces are wilds). The receiving team's agent shows a blue dot indicator. When the Intel Die is consumed in a recovery session, the indicator disappears. The Intel Die is a powerful cooperative tool for helping allies recover difficult articles.</p>
+
+<h3>6.9 Escape Jail / Lost in Time</h3>
 <p>Agents trapped in Jail or Lost in Time must attempt to escape (see Sections 12&ndash;13).</p>
 
-<h3>6.9 Skip Agent</h3>
+<h3>6.10 Skip Agent</h3>
 <p>Choose to have an agent take no action this turn.</p>
 
 <hr>
@@ -606,13 +602,12 @@
   <tr><td class="center"><span class="die-green">Green</span></td><td>Base Time</td><td>1, 1, 1, 1, 0, &#9733;</td><td>Always required (must show "1")</td></tr>
   <tr><td class="center"><span class="die-black">Black</span></td><td>Direction</td><td>2, 2, 3, X, 0, &#9733;</td><td>Direction: 2=past, 3=future; X=skull</td></tr>
   <tr><td class="center"><span class="die-white">White</span></td><td>Planet</td><td>5, 5, 4, X, 0, &#9733;</td><td>5=Earth location, 4=off-world (space/moon)</td></tr>
-  <tr><td class="center"><span class="die-orange">Orange</span></td><td>Ring</td><td>6, 6, 7, 8, X, 0</td><td>Must match destination's ring (6=R3, 7=R2, 8=R1); X=skull. Vortex (Ring 0) has no dedicated face &mdash; requires wilds.</td></tr>
+  <tr><td class="center"><span class="die-orange">Orange</span></td><td>Ring</td><td>6, 6, 7, 8, X, 0</td><td>Must match destination's ring (6=R3, 7=R2, 8=R1); X=skull</td></tr>
   <tr><td class="center"><span class="die-blue">Blue</span></td><td>Portal</td><td>&#9733;, &#9733;, &#9733;, &#9733;, 0, X</td><td>Bonus die if destination is an active portal</td></tr>
   <tr><td class="center"><span class="die-yellow">Yellow</span></td><td>Adjacent</td><td>!, !, &#9733;, &#9733;, 0, &#9733;</td><td>Bonus die if adjacent; ! = negate (cancels one skull)</td></tr>
   <tr><td class="center"><span class="die-tl">TL</span></td><td>TimeLord</td><td>&#9733;, &#9733;, &#9733;, &#9733;, 0, 0</td><td>Bonus die (TimeLord agents only)</td></tr>
   <tr><td class="center"><span class="die-hazard">Hazard</span></td><td>Baal</td><td>+, +, 0, 0, 0, 0</td><td>Penalty die when timeline &le; &minus;6 (non-TimeLords only); + = Time Travel Sickness (miss next turn)</td></tr>
-  <tr><td class="center" style="color:#7c3aed">Purple</td><td>Age</td><td>&#x2191;, &#x2193;, 0, 0, 0, 0</td><td>Always included for all agents (including TimeLords). &#x2191; = ageing check, &#x2193; = sickness check. See <a href="#sec-aging">Aging</a>.</td></tr>
-  <tr><td class="center" style="color:#7c3aed">Purple</td><td>Alpha</td><td>&#9733;, &#9733;, 0, 0, 0, 0</td><td>Bonus die for AutoAlpha variant agents only; 2 wilds, 4 blanks</td></tr>
+  <tr><td class="center"><span style="color:#a78bfa; font-weight:bold;">Age</span></td><td>Age</td><td>+, &minus;, 0, 0, 0, 0</td><td>Always included; + = Ageing check, &minus; = Sickness check (see Section 7b)</td></tr>
 </table>
 
 <h3>Special Face Values</h3>
@@ -630,21 +625,17 @@
 <h3>Travel Requirements</h3>
 <p>To successfully travel, you need to lock dice showing:</p>
 <ol>
-  <li><strong>Ring face</strong> &mdash; matching the destination ring: 6=Ring 3, 7=Ring 2, 8=Ring 1 (always required)</li>
+  <li><strong>Ring face</strong> &mdash; matching the destination ring (always required)</li>
   <li><strong>Base "1"</strong> &mdash; from the Green die (always required)</li>
   <li><strong>Planet face</strong> &mdash; matching the destination type: "5" for Earth locations, "4" for off-world (always required)</li>
   <li><strong>Direction face</strong> &mdash; "2" for travelling to the past, "3" for travelling to the future (required only if origin and destination are in different eras)</li>
 </ol>
-<blockquote><strong>Vortex note:</strong> The Ring die has no "9" face &mdash; it was replaced by a skull. Travelling to the Time Vortex (Ring 0) requires <strong>wilds</strong> to satisfy the ring requirement, making it one of the hardest destinations to reach.</blockquote>
 
-<h3>Bonus &amp; Conditional Dice</h3>
+<h3>Bonus Dice</h3>
 <ul>
-  <li><strong>Portal die (Blue):</strong> Added if the destination is an active portal. Mostly wilds &mdash; pure bonus.</li>
-  <li><strong>Adjacent die (Yellow):</strong> Added if the destination is exactly 1 hex away. Wilds and negates &mdash; pure bonus.</li>
+  <li><strong>Portal die (Blue):</strong> Added if the destination is an active portal. All faces are wilds or blanks &mdash; pure bonus.</li>
+  <li><strong>Adjacent die (Yellow):</strong> Added if the destination is exactly 1 hex away. All faces are wilds or blanks &mdash; pure bonus.</li>
   <li><strong>TimeLord die (TL):</strong> Added if the travelling agent is a TimeLord. Mostly wilds &mdash; significant advantage.</li>
-  <li><strong>Age die (Purple):</strong> Always included for all agents. Does not contribute to travel requirements &mdash; resolved separately for aging/sickness checks (see <a href="#sec-aging">Aging</a>).</li>
-  <li><strong>Hazard die (Baal):</strong> Added when timeline &le; &minus;6, for non-TimeLord agents only (see above).</li>
-  <li><strong>Alpha die (Purple):</strong> Added for AutoAlpha variant agents only. 2 wilds, 4 blanks.</li>
 </ul>
 
 <h3>Rolling Procedure</h3>
@@ -660,44 +651,64 @@
   <li>If not &rarr; <strong>Failure.</strong> Agent stays at current location</li>
 </ol>
 
-<h3 id="sec-aging">Aging &amp; Sickness (Age Die)</h3>
-<p>The <strong>Age die</strong> (purple) is included in <strong>every travel roll</strong> for all agents, including TimeLords. It has 1 ageing face (&#x2191;), 1 sickness face (&#x2193;), and 4 blanks. The Age die does not contribute to travel requirements &mdash; it is resolved separately.</p>
-
-<h4>Age Progression</h4>
-<p>Each agent tracks an <strong>age state</strong> that progresses through four stages:</p>
-<p><strong>Child &rarr; Youth (starting age) &rarr; Adult &rarr; Old</strong></p>
-
-<h4>Ageing Face (&#x2191;)</h4>
-<p>When the &#x2191; face appears, roll <strong>1d6</strong>:</p>
-<table>
-  <tr><th class="center">d6</th><th>Result</th></tr>
-  <tr><td class="center">1</td><td><strong>Age up</strong> &mdash; agent moves one step toward Old (e.g. Youth &rarr; Adult)</td></tr>
-  <tr><td class="center">2</td><td><strong>De-age</strong> &mdash; agent moves one step toward Child (e.g. Adult &rarr; Youth)</td></tr>
-  <tr><td class="center">3&ndash;6</td><td>No effect</td></tr>
-</table>
-
-<h4>Sickness Face (&#x2193;)</h4>
-<p>When the &#x2193; face appears, roll <strong>1d6</strong>:</p>
-<table>
-  <tr><th class="center">d6</th><th>Result</th></tr>
-  <tr><td class="center">1&ndash;2</td><td><strong>Time Sickness</strong> &mdash; agent misses their next turn</td></tr>
-  <tr><td class="center">3&ndash;6</td><td>No effect</td></tr>
-</table>
-
-<h4>Zerotime (Age Overflow)</h4>
-<p>If an agent is already at <strong>Old</strong> and ages up, or is already at <strong>Child</strong> and de-ages, they enter <strong>Zerotime</strong> &mdash; a temporal overflow state. When this happens:</p>
-<ul>
-  <li>The agent's turn <strong>ends immediately</strong> (all remaining agents for that player also lose their actions for the turn)</li>
-  <li>At the start of the player's <strong>next turn</strong>, the agent automatically resets to <strong>Youth</strong></li>
-</ul>
-
-<blockquote><strong>Note:</strong> Zerotime does not kill the agent &mdash; it is a temporary state. However, the turn-ending penalty is severe since it affects <em>all</em> of the player's remaining agents for that turn, not just the one who overflowed.</blockquote>
-
-<h4>Archetype Avatars</h4>
-<p>When using <strong>Archetype avatars</strong> (an avatar option), agents do not track age. Instead, any non-blank Age die face automatically triggers a <strong>miss-a-turn</strong> penalty with no d6 check.</p>
-
 <h3>Travel Events</h3>
 <p>If a skull (X) face appears during travel, a <strong>Travel Event Card</strong> may be drawn (see Section 14).</p>
+
+<hr>
+
+<!-- SECTION 7b — Time Travel Ageing -->
+<h2 id="sec-7b"><span class="section-num">7b.</span> Time Travel Ageing</h2>
+<p>Every time travel attempt includes an <strong>Age die</strong> &mdash; a purple die rolled alongside the travel dice. The Age die reflects the physical toll of travelling through time, causing agents' avatars to age or rejuvenate, and in extreme cases triggering <strong>Time Travel Sickness</strong>.</p>
+
+<h3>The Age Die</h3>
+<table>
+  <tr><th class="center">Die</th><th>Faces</th><th>Purpose</th></tr>
+  <tr><td class="center"><span style="color:#a78bfa; font-weight:bold;">Age</span></td><td>+, &minus;, 0, 0, 0, 0</td><td>Always included in every travel roll (all agents, including TimeLords)</td></tr>
+</table>
+<ul>
+  <li><strong>+ (Ageing face):</strong> Triggers an ageing check (see below)</li>
+  <li><strong>&minus; (Sickness face):</strong> Triggers a sickness check (see below)</li>
+  <li><strong>0 (Blank):</strong> No effect (4 out of 6 faces)</li>
+</ul>
+
+<h3>Ageing Check (+ face)</h3>
+<p>When the + face is rolled, roll a separate <strong>d6</strong> to determine the outcome:</p>
+<table>
+  <tr><th class="center">d6 Result</th><th>Effect</th></tr>
+  <tr><td class="center">1</td><td><strong>Age Up</strong> &mdash; the player's avatar ages one step forward (e.g. Youth &rarr; Adult)</td></tr>
+  <tr><td class="center">2</td><td><strong>De-Age</strong> &mdash; the player's avatar ages one step backward (e.g. Adult &rarr; Youth)</td></tr>
+  <tr><td class="center">3&ndash;6</td><td>No effect</td></tr>
+</table>
+
+<h3>Age Steps</h3>
+<p>Each player's avatar progresses through these life stages:</p>
+<blockquote>
+  Child &rarr; Youth &rarr; Adult &rarr; Old &rarr; <strong>Zero Time</strong>
+</blockquote>
+<p>All players begin as <strong>Youth</strong>. The avatar picture changes to reflect the current age, and the age is displayed on the player panel.</p>
+
+<h3>Zero Time</h3>
+<p>If an ageing result would push the avatar <strong>past Old</strong> (aging up from Old) or <strong>below Child</strong> (de-aging from Child), the player enters <strong>Zero Time</strong> &mdash; a critical state representing temporal overload:</p>
+<ul>
+  <li>A dramatic popup shows the avatar transformation</li>
+  <li><strong>All remaining unspent agents are immediately marked as spent</strong></li>
+  <li>The player's turn ends immediately &mdash; no further actions are possible</li>
+  <li>The avatar resets from Zero Time at the start of the player's next turn</li>
+</ul>
+
+<h3>Sickness Check (&minus; face)</h3>
+<p>When the &minus; face is rolled, roll a separate <strong>d6</strong>:</p>
+<table>
+  <tr><th class="center">d6 Result</th><th>Effect</th></tr>
+  <tr><td class="center">1&ndash;2</td><td><strong>Time Travel Sickness</strong> &mdash; the travelling agent misses their next turn</td></tr>
+  <tr><td class="center">3&ndash;6</td><td>No effect</td></tr>
+</table>
+<p>Time Travel Sickness affects the individual agent, not the entire team. The agent is marked as &ldquo;sick&rdquo; and will skip one turn before being available again.</p>
+
+<blockquote><strong>Note:</strong> The Age die is separate from the <strong>Hazard (Baal) die</strong>, which is a penalty die added only when the timeline drops to &minus;6 or below. Both can be in the travel pool simultaneously, compounding the risks of time travel.</blockquote>
+
+<h3>Archetype Mode</h3>
+<p>When using <strong>Archetype avatars</strong> (avatar set 1), the ageing system is simplified: any + or &minus; face on the Age die immediately ends the player's turn, bypassing the d6 check entirely. Archetype avatars do not visually age.</p>
 
 <hr>
 
@@ -714,6 +725,7 @@
   <tr><td class="center"><span class="die-black">Black</span></td><td>Black</td><td>&#9733;, S, C, P, $, H</td><td>&#9733; = Wild; $ = Draw event</td></tr>
   <tr><td class="center"><span class="die-white">White</span></td><td>White</td><td>A, S, C, P, M, &#9733;</td><td>&#9733; = Wild</td></tr>
   <tr><td class="center"><span class="die-tl">TL</span></td><td>TL</td><td>M, C, P, H, &#9733;, &#9733;</td><td>TimeLord bonus (2 wilds!)</td></tr>
+  <tr><td class="center"><span style="color:#a78bfa">Purple</span></td><td>Intel</td><td>&#9733;, &#9733;, &#9733;, &#9733;, &#9733;, &#9733;</td><td>Granted by Intel/Recon action; single use, all wilds</td></tr>
 </table>
 
 <h3>Recovery Factors</h3>
@@ -730,13 +742,12 @@
 
 <h3>Recovery Templates</h3>
 <table>
-  <tr><th>Template</th><th>Factors</th><th class="center">&#11088;</th><th class="center">&#11035;</th><th>Used By</th></tr>
-  <tr><td>Minor Item</td><td>M, P, S</td><td class="center">4</td><td class="center">1</td><td>Antikythera, Da Vinci's Compass, Henry VIII Armour, Maltese Falcon, Shakespeare's Quill, Viking Runestone</td></tr>
-  <tr><td>Major Item</td><td>A, H, M, S</td><td class="center">5</td><td class="center">2</td><td>Babylonian Tablet, Schr&ouml;dinger's Cat, Shambhala Passport, Tesla's Coil Fragment, Tesseract Cube</td></tr>
-  <tr><td>All Factors</td><td>A, C, H, M, P, S</td><td class="center">8</td><td class="center">2</td><td>The Crown Jewels</td></tr>
-  <tr><td>Crystal</td><td>C, M, P, S</td><td class="center">3</td><td class="center">1</td><td>All 12 crystals</td></tr>
-  <tr><td>Key Artifact</td><td>A, H, M, P</td><td class="center">6</td><td class="center">&mdash;</td><td>Arc of Covenant, Devil's Chair, Excalibur Sword, Holy Grail</td></tr>
-  <tr><td>Minor Artifact</td><td>A, P, S</td><td class="center">4</td><td class="center">&mdash;</td><td>Chintamani Stone, Crystal Skull, Jade Monkey, King Solomon's Ring, Nefertiti's Amulet, Seal of Solomon, Spear of Destiny, Staff of Osiris</td></tr>
+  <tr><th>Template</th><th>Factors</th><th>Used By</th></tr>
+  <tr><td>Crystal</td><td>C, M, P, S</td><td>All crystals</td></tr>
+  <tr><td>Key Artifact</td><td>A, H, M, P</td><td>Major artifacts (Excalibur, Staff of Osiris, etc.)</td></tr>
+  <tr><td>Minor Artifact</td><td>A, P, S</td><td>Minor artifacts (King Solomon's Ring, Seal of Solomon, etc.)</td></tr>
+  <tr><td>Major Item</td><td>A, H, M, S</td><td>Complex items (Crown Jewels, Henry VIII Armour, etc.)</td></tr>
+  <tr><td>Minor Item</td><td>M, P, S</td><td>Simple items (Maltese Falcon, Babylonian Tablet, etc.)</td></tr>
 </table>
 
 <h3>Rolling Procedure</h3>
@@ -770,57 +781,57 @@
 <p>Historical curiosities scattered to random past-era Time Locations at game start. When recovered, items are carried by the agent and must be brought back to HQ to be <strong>restored</strong> (deposited). Restoring an item at HQ awards its <strong>Kairos (&#11088;)</strong> value, removes its <strong>Blot (&#11035;)</strong> value, and reduces the <strong>Paradox counter by 1</strong>.</p>
 
 <table>
-  <tr><th>Item</th><th class="center">&#11088; Kairos</th><th class="center">&#11035; Blots</th><th>Template</th><th>Required Factors</th></tr>
-  <tr><td>Antikythera</td><td class="center">4</td><td class="center">1</td><td>Minor</td><td>M, P, S</td></tr>
-  <tr><td>Babylonian Tablet</td><td class="center">5</td><td class="center">2</td><td>Major</td><td>A, H, M, S</td></tr>
-  <tr><td>Da Vinci's Compass</td><td class="center">4</td><td class="center">1</td><td>Minor</td><td>M, P, S</td></tr>
-  <tr><td>Henry VIII Armour</td><td class="center">4</td><td class="center">1</td><td>Minor</td><td>M, P, S</td></tr>
-  <tr><td>Maltese Falcon</td><td class="center">4</td><td class="center">1</td><td>Minor</td><td>M, P, S</td></tr>
-  <tr><td>Schr&ouml;dinger's Cat</td><td class="center">5</td><td class="center">2</td><td>Major</td><td>A, H, M, S</td></tr>
-  <tr><td>Shakespeare's Quill</td><td class="center">4</td><td class="center">1</td><td>Minor</td><td>M, P, S</td></tr>
-  <tr><td>Shambhala Passport</td><td class="center">5</td><td class="center">2</td><td>Major</td><td>A, H, M, S</td></tr>
-  <tr><td>Tesla's Coil Fragment</td><td class="center">5</td><td class="center">2</td><td>Major</td><td>A, H, M, S</td></tr>
-  <tr><td>The Crown Jewels</td><td class="center">8</td><td class="center">2</td><td>All</td><td>A, C, H, M, P, S</td></tr>
-  <tr><td>Tesseract Cube</td><td class="center">5</td><td class="center">2</td><td>Major</td><td>A, H, M, S</td></tr>
-  <tr><td>Viking Runestone</td><td class="center">4</td><td class="center">1</td><td>Minor</td><td>M, P, S</td></tr>
+  <tr><th>Item</th><th class="center">&#11088; Kairos</th><th class="center">&#11035; Blots</th><th>Required Factors</th></tr>
+  <tr><td>Antikythera</td><td class="center">2</td><td class="center">1</td><td>A, S, M</td></tr>
+  <tr><td>Babylonian Tablet</td><td class="center">2</td><td class="center">1</td><td>S, P, M</td></tr>
+  <tr><td>Crown Jewels</td><td class="center">4</td><td class="center">1</td><td>A, S, P, M, H</td></tr>
+  <tr><td>Da Vinci's Compass</td><td class="center">2</td><td class="center">1</td><td>S, P, H</td></tr>
+  <tr><td>Henry VIII Armour</td><td class="center">3</td><td class="center">1</td><td>A, S, M, H</td></tr>
+  <tr><td>Maltese Falcon</td><td class="center">2</td><td class="center">1</td><td>A, S, P</td></tr>
+  <tr><td>Schr&ouml;dinger's Cat</td><td class="center">2</td><td class="center">1</td><td>A, S, P</td></tr>
+  <tr><td>Shakespeare's Quill</td><td class="center">2</td><td class="center">1</td><td>S, M, H</td></tr>
+  <tr><td>Shambhala Passport</td><td class="center">2</td><td class="center">1</td><td>A, P, M</td></tr>
+  <tr><td>Tesla's Coil Fragment</td><td class="center">2</td><td class="center">1</td><td>C, M, H</td></tr>
+  <tr><td>Tesseract Cube</td><td class="center">4</td><td class="center">1</td><td>A, S, C, M, H</td></tr>
+  <tr><td>Viking Runestone</td><td class="center">2</td><td class="center">1</td><td>A, S, H</td></tr>
 </table>
 
 <h3>Crystals (12 total)</h3>
-<p>Precious gems found at future Time Locations (space stations, moons, and distant planets). Crystals start at their correct Time Location. When recovered and brought to HQ, crystals are <strong>deposited</strong> &mdash; the player earns the crystal's <strong>Kairos (&#11088;)</strong> value and removes its <strong>Blot (&#11035;)</strong> value. Deposited crystals contribute to <strong>Crystal Light</strong> each round during the Kronos phase (each crystal rolls 1d6; on 4+ it adds +1 Timeline). Crystals can also be <strong>empowered</strong> by TimeLord agents for a roll bonus (see Section 6.5).</p>
+<p>Precious gems found at future Time Locations (space stations, moons, and distant planets). Crystals start at their correct Time Location. When recovered and brought to HQ, crystals are <strong>deposited</strong> &mdash; the player earns the crystal's <strong>Kairos (&#11088;)</strong> value and removes its <strong>Blot (&#11035;)</strong> value. Deposited crystals contribute to <strong>Crystal Light</strong> each round during the Kronos phase &mdash; all non-depleted crystals at HQ or in the field roll 2d6 + modifiers vs 9 for a chance at +2 or +3 Timeline (miss still gives +1). Crystals can also be <strong>empowered</strong> by agents at HQ for a roll bonus (see Section 6.5).</p>
 
 <table>
   <tr><th>Crystal</th><th class="center">&#11088; Kairos</th><th class="center">&#11035; Blots</th><th>Required Factors</th><th>Location</th></tr>
-  <tr><td>Amethyst</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Mt Fuji (2157 AD)</td></tr>
-  <tr><td>Beryl</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Ganymede (2184 AD)</td></tr>
-  <tr><td>Chalcedony</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Saturn Rings (2163 AD)</td></tr>
-  <tr><td>Chrysolite</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Venus (2183 AD)</td></tr>
-  <tr><td>Chrysoprasus</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Ceres (2124 AD)</td></tr>
-  <tr><td>Emerald</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Ceres (2125 AD)</td></tr>
-  <tr><td>Jacinth</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Neptune (2103 AD)</td></tr>
-  <tr><td>Jasper</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Venus (2153 AD)</td></tr>
-  <tr><td>Sapphire</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Ganymede (2154 AD)</td></tr>
-  <tr><td>Sardius</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Mt Shasta (2164 AD)</td></tr>
-  <tr><td>Sardonyx</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Neptune (2169 AD)</td></tr>
-  <tr><td>Topaz</td><td class="center">3</td><td class="center">1</td><td>C, M, P, S</td><td>Saturn Rings (2133 AD)</td></tr>
+  <tr><td>Amethyst</td><td class="center">2</td><td class="center">1</td><td>A, S, C</td><td>Mt Fuji (2157 AD)</td></tr>
+  <tr><td>Beryl</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Ganymede (2184 AD)</td></tr>
+  <tr><td>Chalcedony</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Saturn (2163 AD)</td></tr>
+  <tr><td>Chrysolite</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Venus (2183 AD)</td></tr>
+  <tr><td>Chrysoprasus</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Ceres (2124 AD)</td></tr>
+  <tr><td>Emerald</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Ceres (2125 AD)</td></tr>
+  <tr><td>Jacinth</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Neptune (2103 AD)</td></tr>
+  <tr><td>Jasper</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Venus (2153 AD)</td></tr>
+  <tr><td>Sapphire</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Ganymede (2154 AD)</td></tr>
+  <tr><td>Sardius</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Mt Shasta (2164 AD)</td></tr>
+  <tr><td>Sardonyx</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Neptune (2169 AD)</td></tr>
+  <tr><td>Topaz</td><td class="center">3</td><td class="center">1</td><td>S, C, P, M</td><td>Saturn (2133 AD)</td></tr>
 </table>
 
 <h3>Artifacts (12 total)</h3>
-<p>Legendary relics of immense power. Artifacts start at their correct Time Location. Unlike items and crystals, artifacts are NOT carried &mdash; they are <strong>guarded</strong> in place after successful recovery. Guarding an artifact awards its <strong>Kairos (&#11088;)</strong> value, protects it from Kronos' theft attempts, and is one of the two prerequisites for TimeLord upgrades.</p>
+<p>Legendary relics of immense power. Artifacts start at their correct Time Location. Unlike items and crystals, artifacts are NOT carried &mdash; they are <strong>guarded</strong> in place after successful recovery. Guarding an artifact awards its <strong>Kairos (&#11088;)</strong> value and protects it from Kronos' theft attempts.</p>
 
 <table>
-  <tr><th>Artifact</th><th class="center">&#11088; Kairos</th><th>Template</th><th>Required Factors</th><th>Location</th></tr>
-  <tr><td>Arc of Covenant</td><td class="center">6</td><td>Key</td><td>A, H, M, P</td><td>Giza Pyramids (2108 BC)</td></tr>
-  <tr><td>Chintamani Stone</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Lhasa (1275 AD)</td></tr>
-  <tr><td>Crystal Skull</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Mesoamerica (1520 AD)</td></tr>
-  <tr><td>Devil's Chair</td><td class="center">6</td><td>Key</td><td>A, H, M, P</td><td>Pergamon (1941 AD)</td></tr>
-  <tr><td>Excalibur Sword</td><td class="center">6</td><td>Key</td><td>A, H, M, P</td><td>Glastonbury (512 AD)</td></tr>
-  <tr><td>Holy Grail</td><td class="center">6</td><td>Key</td><td>A, H, M, P</td><td>South of France (78 AD)</td></tr>
-  <tr><td>Jade Monkey</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Xian (221 BC)</td></tr>
-  <tr><td>King Solomon's Ring</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Jerusalem (612 BC)</td></tr>
-  <tr><td>Nefertiti's Amulet</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Akhetaten (1330 BC)</td></tr>
-  <tr><td>Seal of Solomon</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Jerusalem (970 BC)</td></tr>
-  <tr><td>Spear of Destiny</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Jerusalem (33 AD)</td></tr>
-  <tr><td>Staff of Osiris</td><td class="center">4</td><td>Minor</td><td>A, P, S</td><td>Thebes (1250 BC)</td></tr>
+  <tr><th>Artifact</th><th class="center">&#11088; Kairos</th><th>Required Factors</th><th>Location</th></tr>
+  <tr><td>Arc of Covenant</td><td class="center">3</td><td>A, S, M</td><td>Giza Pyramids (2108 BC)</td></tr>
+  <tr><td>Chintamani Stone</td><td class="center">2</td><td>C, H</td><td>Lhasa (1275 AD)</td></tr>
+  <tr><td>Crystal Skull</td><td class="center">4</td><td>A, S, P, M</td><td>Mesoamerica (1520 AD)</td></tr>
+  <tr><td>Devil's Chair</td><td class="center">3</td><td>M, S, P</td><td>Pergamon (1941 AD)</td></tr>
+  <tr><td>Excalibur Sword</td><td class="center">4</td><td>A, H, P, M</td><td>Glastonbury (512 AD)</td></tr>
+  <tr><td>Holy Grail</td><td class="center">3</td><td>H, C, M</td><td>South of France (78 AD)</td></tr>
+  <tr><td>Jade Monkey</td><td class="center">3</td><td>A, C, M</td><td>Xian (221 BC)</td></tr>
+  <tr><td>King Solomon's Ring</td><td class="center">2</td><td>A, S</td><td>Jerusalem (612 BC)</td></tr>
+  <tr><td>Nefertiti's Amulet</td><td class="center">2</td><td>S, H</td><td>Akhetaten (1330 BC)</td></tr>
+  <tr><td>Seal of Solomon</td><td class="center">2</td><td>S, H</td><td>Jerusalem (970 BC)</td></tr>
+  <tr><td>Spear of Destiny</td><td class="center">3</td><td>S, P, M</td><td>Jerusalem (33 AD)</td></tr>
+  <tr><td>Staff of Osiris</td><td class="center">4</td><td>A, P, M, H</td><td>Thebes (1250 BC)</td></tr>
 </table>
 
 <h3>Restoring Articles at HQ</h3>
@@ -845,15 +856,7 @@
 <p>The number of starting TimeLords depends on player count (see Section 4 setup table). In a 1-player game you begin with 4 TimeLords; in a 2-player game, 2 each; in 3&ndash;4 player games, 1 each. TimeLords use military-style callsigns (e.g. T1Alpha, T1Bravo). All other agents start as regular agents.</p>
 
 <h3>Upgrading to TimeLord</h3>
-<p>A regular agent can be upgraded to TimeLord status when <strong>both</strong> of the following conditions are met:</p>
-<ol>
-  <li>The player has <strong>deposited at least one crystal</strong> at HQ</li>
-  <li>The player has <strong>guarded at least one artifact</strong> in the field</li>
-</ol>
-<p>When both conditions are satisfied, the next time an agent performs a qualifying action (guarding an artifact or depositing a crystal), one of the player's regular agents is automatically upgraded.</p>
-
-<h3>Agent Kairos (Experience) &amp; Upgrade Threshold</h3>
-<p>Each agent tracks their own <strong>agent kairos</strong> &mdash; cumulative experience earned through actions in the field. When an agent accumulates <strong>8 or more agent kairos</strong> while at HQ, they are eligible for automatic upgrade to TimeLord (if the player meets the crystal + artifact prerequisites above).</p>
+<p>Each agent tracks their own <strong>agent kairos</strong> &mdash; cumulative experience earned through actions in the field. When an agent accumulates <strong>8 or more agent kairos</strong>, they are automatically upgraded to TimeLord status.</p>
 
 <p><strong>How agents earn experience:</strong></p>
 <table>
@@ -890,17 +893,13 @@
 </ul>
 
 <h4>Nerf Dice Roll</h4>
-<p>Nerfing requires a successful dice roll. When an agent empowers a crystal, the empowerment always succeeds (granting the &#11088; Kairos and Crystal Light bonus), but the <strong>nerfing</strong> of the paired artifact depends on a <strong>2d6 roll minus the crystal's depletion count</strong>. A result of <strong>4 or higher</strong> is required for the nerf to take effect.</p>
+<p>Nerfing requires a successful dice roll. When an agent empowers a crystal, the empowerment always succeeds (granting the &#11088; Kairos and Crystal Light bonus), but the <strong>nerfing</strong> of the paired artifact depends on a <strong>2d6 roll minus the artifact's depletion count</strong>. A result of <strong>4 or higher</strong> is required for the nerf to take effect. Each successful nerf adds <strong>+4 depletion</strong> to the artifact, making future nerfs progressively harder.</p>
 
 <table>
-  <tr><th>Crystal Depletion</th><th class="center">Nerf Roll Needed</th><th class="center">Success Chance</th><th>Visual</th></tr>
-  <tr><td>Fresh crystal (0 depletion)</td><td class="center">2d6 &ge; 4</td><td class="center">92%</td><td><span class="prob-bar prob-high" style="width:92px"></span></td></tr>
-  <tr><td>Slightly depleted (1)</td><td class="center">2d6 &minus; 1 &ge; 4</td><td class="center">83%</td><td><span class="prob-bar prob-high" style="width:83px"></span></td></tr>
-  <tr><td>Depleted (2)</td><td class="center">2d6 &minus; 2 &ge; 4</td><td class="center">72%</td><td><span class="prob-bar prob-high" style="width:72px"></span></td></tr>
-  <tr><td>Depleted (3)</td><td class="center">2d6 &minus; 3 &ge; 4</td><td class="center">58%</td><td><span class="prob-bar prob-high" style="width:58px"></span></td></tr>
-  <tr><td>Heavily depleted (4)</td><td class="center">2d6 &minus; 4 &ge; 4</td><td class="center">42%</td><td><span class="prob-bar prob-mid" style="width:42px"></span></td></tr>
-  <tr><td>Heavily depleted (5)</td><td class="center">2d6 &minus; 5 &ge; 4</td><td class="center">28%</td><td><span class="prob-bar prob-mid" style="width:28px"></span></td></tr>
-  <tr><td>Heavily depleted (6+)</td><td class="center">2d6 &minus; 6 &ge; 4</td><td class="center">17%</td><td><span class="prob-bar prob-low" style="width:17px"></span></td></tr>
+  <tr><th>Artifact Depletion</th><th class="center">Nerf Roll Needed</th><th class="center">Success Chance</th><th>Visual</th></tr>
+  <tr><td>Fresh artifact (0 depletion)</td><td class="center">2d6 &ge; 4</td><td class="center">92%</td><td><span class="prob-bar prob-high" style="width:92px"></span></td></tr>
+  <tr><td>After 1 nerf (4 depletion)</td><td class="center">2d6 &minus; 4 &ge; 4</td><td class="center">42%</td><td><span class="prob-bar prob-mid" style="width:42px"></span></td></tr>
+  <tr><td>After 2 nerfs (8 depletion)</td><td class="center">2d6 &minus; 8 &ge; 4</td><td class="center">3%</td><td><span class="prob-bar prob-low" style="width:3px"></span></td></tr>
 </table>
 
 <blockquote><strong>If nerf fails:</strong> The empowerment still happens (the crystal gets its Crystal Light bonus and the player earns +1&#11088; Kairos), but the paired artifact is <strong>NOT nerfed</strong> and no blot reduction is granted from the Kronos-held artifact bonus. This makes crystal depletion a serious long-term threat.</blockquote>
@@ -917,7 +916,8 @@
 
 <h3>Vortex Attempt</h3>
 <p>Roll <strong>2d6</strong> and calculate:</p>
-<p><strong>Result = 2d6 + (your empowered crystals) &minus; (Kronos' empowered artifacts)</strong></p>
+<p><strong>Result = 2d6 + (HQ crystals) &minus; (Kronos artifacts) + (other TimeLords at Vortex) + (urgency modifier)</strong></p>
+<p>TimeLords arriving at the Vortex can make an <strong>urgent attempt</strong> as a bonus action, but with a <strong>&minus;2 modifier</strong> (harder to succeed, easier to die). Or they can wait until their next turn for a normal attempt (no modifier). Other TimeLords already at the Vortex provide a <strong>+1 assist</strong> each to the roll.</p>
 
 <table>
   <tr><th class="center">Result</th><th>Outcome</th></tr>
@@ -939,7 +939,7 @@
 <table>
   <tr><th class="center">Option</th><th>Method</th><th>Cost</th></tr>
   <tr><td class="center">A</td><td>Roll <strong>2d6</strong> &mdash; if doubles, you escape!</td><td>&minus;2&#11088; Kairos (no blots)</td></tr>
-  <tr><td class="center">B</td><td><strong>Bribe Xanadu</strong> &mdash; instant escape</td><td>&minus;3&#11088; Kairos, +1&#11035; Blot</td></tr>
+  <tr><td class="center">B</td><td><strong>Bribe Xanadu</strong> &mdash; instant escape</td><td>&minus;3&#11088; Kairos, &minus;1&#11035; Blot</td></tr>
   <tr><td class="center">C</td><td>Use a <strong>KEEP &ndash; JAIL</strong> event card</td><td>Free (card discarded)</td></tr>
   <tr><td class="center">D</td><td>Use a <strong>KEEP &ndash; WILD</strong> event card</td><td>Free (card discarded)</td></tr>
 </table>
@@ -1032,18 +1032,20 @@
 
 <p><strong>Roll modifiers:</strong></p>
 <ul>
-  <li><strong>+Paradox change:</strong> +(current paradoxes &minus; starting paradoxes). As paradoxes rise, Kronos grows stronger.</li>
-  <li><strong>+Crystal excess:</strong> +max(0, player crystals at HQ &minus; Kronos artifacts held). Hoarding crystals gives Kronos a catch-up bonus.</li>
-  <li><strong>&minus;Protection:</strong> Agent present = &minus;3, Guarded artifact = &minus;1. Positioning agents still matters.</li>
+  <li><strong>+Timeline tier:</strong> +max(0, 3 + timeline &divide; 5). When the timeline is high, Kronos grows stronger; when negative, the bonus shrinks.</li>
+  <li><strong>+Crystal excess:</strong> +max(0, weighted player crystals &minus; Kronos artifacts held). HQ crystals count as 1.0, inventory crystals as 0.5.</li>
+  <li><strong>&minus;Protection (cumulative):</strong> Agent present = &minus;4, Guarded artifact = &minus;2. Both stack if an agent is at a guarded artifact (&minus;6 total).</li>
   <li><strong>&minus;Non-portal:</strong> &minus;5 if the artifact's location does not have an active portal.</li>
-  <li><strong>+Hard difficulty:</strong> +1 on Hard mode.</li>
+  <li><strong>+Ring modifier:</strong> Ring 1 (adjacent to Vortex) = +2, Ring 2 = +1, Ring 0/3 = +0. Inner ring artifacts are more vulnerable.</li>
+  <li><strong>+Difficulty modifier:</strong> Epic +3, Challenge +2, Standard 0, Casual &minus;2.</li>
 </ul>
 
 <table>
   <tr><th>Protection Level</th><th>Condition</th><th class="center">Roll Modifier</th></tr>
   <tr><td>Unprotected</td><td>No agent, not guarded</td><td class="center">+0</td></tr>
-  <tr><td>Guarded</td><td>Artifact has been guarded</td><td class="center">&minus;1</td></tr>
-  <tr><td>Protected</td><td>An agent is present</td><td class="center">&minus;3</td></tr>
+  <tr><td>Guarded</td><td>Artifact has been guarded</td><td class="center">&minus;2</td></tr>
+  <tr><td>Protected</td><td>An agent is present</td><td class="center">&minus;4</td></tr>
+  <tr><td>Guarded + Protected</td><td>Both conditions met (cumulative)</td><td class="center">&minus;6</td></tr>
   <tr><td>Non-portal</td><td>Location has no active portal</td><td class="center">&minus;5</td></tr>
 </table>
 
@@ -1051,29 +1053,39 @@
 <p>On a successful steal, the artifact is moved to <strong>Kronos HQ</strong> and the paradox counter increases by 1.</p>
 
 <h3>Phase 2: EMPOWER</h3>
-<p>For each artifact Kronos holds (that isn't nerfed), Kronos rolls <strong>1d6</strong>:</p>
+<p>For each artifact Kronos holds (that isn't nerfed), Kronos rolls <strong>2d6</strong> + modifiers vs <strong>9+</strong>:</p>
 <ul>
-  <li>On <strong>4+</strong>: The artifact becomes <strong>empowered</strong> (deals greater timeline damage in Phase 3)</li>
+  <li>On <strong>9+</strong>: The artifact becomes <strong>empowered</strong> (deals greater timeline damage in Phase 3)</li>
+  <li><strong>Difficulty modifier:</strong> Epic +3, Challenge +2, Standard 0, Casual &minus;2</li>
+  <li><strong>Timeline modifier:</strong> Same timeline tier as the steal phase</li>
 </ul>
 
-<h3>Phase 3: DARKNESS (Timeline Damage)</h3>
+<h3>Phase 3: TIMELINE CONTROL (Timeline Damage)</h3>
 <p>For each artifact Kronos holds:</p>
 <ul>
-  <li><strong>Empowered artifact:</strong> Timeline decreases by <strong>2</strong> (or 3 on Hard difficulty)</li>
-  <li><strong>Non-empowered artifact:</strong> Timeline decreases by <strong>1</strong> (or 2 on Hard difficulty)</li>
+  <li><strong>Empowered artifact:</strong> Timeline decreases by <strong>2</strong></li>
+  <li><strong>Non-empowered artifact:</strong> Timeline decreases by <strong>1</strong></li>
 </ul>
 <p>If Kronos holds no artifacts, there is no timeline penalty.</p>
 
 <h3>Phase 4: CRYSTAL LIGHT (Timeline Recovery)</h3>
-<p>For each non-nerfed crystal deposited at any player's HQ, roll <strong>2d6</strong>:</p>
+<p>Crystals contribute to the Timeline based on their location:</p>
+
+<table>
+  <tr><th>Crystal Location</th><th>Mechanic</th><th class="center">MLT Gain</th></tr>
+  <tr><td><strong>HQ</strong> (not empowered)</td><td>Roll 2d6 + mods vs 9</td><td class="center">Hit: +2 (+3 if paired art nerfed); Miss: +1</td></tr>
+  <tr><td><strong>HQ</strong> (empowered)</td><td>Roll 2d6 + mods vs 9 (+3 empower bonus)</td><td class="center">Hit: +2 (+3 if paired art nerfed); Miss: +1</td></tr>
+  <tr><td><strong>Field at paired artifact's correct TL</strong></td><td>Roll 2d6 + mods vs 9</td><td class="center">Hit: +2 (+3 if paired art nerfed); Miss: +1</td></tr>
+  <tr><td><strong>Carried by agent</strong></td><td>Does not contribute</td><td class="center">0</td></tr>
+</table>
+
+<p><strong>Crystal Light roll modifiers:</strong></p>
 <ul>
-  <li>On <strong>9+</strong>: The crystal contributes <strong>+1 Timeline</strong> (base payout), or <strong>+2 Timeline</strong> if empowered</li>
   <li><strong>Empowered crystals</strong> receive a <strong>+3 bonus</strong> to the roll</li>
-  <li><strong>Crystal excess modifier:</strong> +1 per (player crystals at HQ minus Kronos artifacts held) &mdash; having more crystals than Kronos has artifacts boosts the roll</li>
-  <li><strong>Depleted crystals</strong> still roll but contribute <strong>no Timeline</strong> on success (they've been exhausted by overflow)</li>
-  <li><strong>Easy difficulty:</strong> Each successful crystal contributes <strong>+1 extra</strong> Timeline</li>
+  <li><strong>Crystal excess modifier:</strong> +max(0, weighted player crystals &minus; Kronos artifacts held)</li>
+  <li><strong>Depleted crystals</strong> do not contribute Timeline (they've been exhausted)</li>
 </ul>
-<p>The Timeline is capped at &plusmn;15.</p>
+<p>All contributing crystals accumulate <strong>depletion</strong> each round &mdash; eventually they deplete and stop contributing. The Timeline is capped at &plusmn;15.</p>
 
 <h3>Timeline Overflow &amp; Depletion</h3>
 <p>If the timeline moves beyond the &plusmn;15 cap, the excess triggers <strong>depletion</strong>:</p>
@@ -1090,7 +1102,6 @@
   <li>If Timeline = +15: Apply <strong>+3</strong> to the roll</li>
 </ul>
 <p>If the adjusted roll &le; paradox count &rarr; <strong>max_rounds decreases by 1</strong> (time is collapsing faster!)</p>
-<blockquote><strong>Floor:</strong> Max rounds can never drop below <strong>6</strong> &mdash; the timeline always gives players at least 6 rounds.</blockquote>
 <blockquote><strong>Exception:</strong> If the Vortex has been successfully switched off, max_rounds is locked and cannot decrease.</blockquote>
 
 <h3>Phase 6: PORTAL ROTATION</h3>
@@ -1135,7 +1146,7 @@
 </ul>
 
 <h3>AutoAlpha Variant</h3>
-<p>AutoAlpha is a stronger Automa variant that receives a <strong>Purple (Alpha) bonus die</strong> on all time travel and recovery rolls. This die has <strong>3 wild faces and 3 blank faces</strong>, giving AutoAlpha agents a significant boost to their success rates and helping them keep pace with human players.</p>
+<p>AutoAlpha is a stronger Automa variant that receives a <strong>Purple (Alpha) bonus die</strong> on all time travel and recovery rolls. This die has <strong>2 wild faces and 4 blank faces</strong>, giving AutoAlpha agents a significant boost to their success rates and helping them keep pace with human players.</p>
 <p>Automa help balance the game for lower player counts, ensuring Kronos faces appropriate opposition and the cooperative challenge remains intact.</p>
 
 <hr>
@@ -1171,7 +1182,7 @@
   <li><strong>Empower crystals</strong> when paired artifact is in Kronos &mdash; removes 1 additional blot</li>
   <li><strong>Vortex success</strong> &mdash; removes 3 blots</li>
   <li><strong>Certain event cards</strong> reduce blots (Time Correction, Time Capsules, etc.)</li>
-  <li><strong>Jail bribe</strong> adds 1 blot (be careful!)</li>
+  <li><strong>Jail bribe</strong> removes 1 blot (but costs 3&#11088;)</li>
 </ul>
 
 <blockquote><strong>Tip:</strong> Players who clear their blots to 0 "ascend to the Golden Age." Among winners, <strong>Kairos score</strong> (Kairos minus Blots) serves as the tiebreaker.</blockquote>
@@ -1221,19 +1232,13 @@
 <p>These options can be configured when creating a new game:</p>
 
 <h3>Difficulty</h3>
+<p>Each preset controls both difficulty and game length in a single setting. Difficulty affects Kronos steal and empower roll modifiers; game length adjusts rounds before Singularity.</p>
 <table>
-  <tr><th class="center">Level</th><th>Effect</th></tr>
-  <tr><td class="center">Easy (0)</td><td>Crystal Light +1 extra per successful crystal during Kronos Phase 4</td></tr>
-  <tr><td class="center">Medium (1)</td><td>Standard rules as written</td></tr>
-  <tr><td class="center">Hard (2)</td><td>Kronos penalties +1 per artifact (empowered: 3 instead of 2; non-empowered: 2 instead of 1)</td></tr>
-</table>
-
-<h3>Game Length</h3>
-<table>
-  <tr><th class="center">Length</th><th>Effect</th></tr>
-  <tr><td class="center">Short</td><td>Max rounds <strong>-2</strong> from standard</td></tr>
-  <tr><td class="center">Standard</td><td>As per setup table</td></tr>
-  <tr><td class="center">Long</td><td>Max rounds <strong>+2</strong> from standard</td></tr>
+  <tr><th class="center">Preset</th><th>Steal/Empower Modifier</th><th>Game Length</th></tr>
+  <tr><td class="center">Casual (0)</td><td>&minus;2 (easier steal/empower rolls)</td><td>Long (+2 rounds)</td></tr>
+  <tr><td class="center">Standard (1)</td><td>0 (standard rules)</td><td>Standard</td></tr>
+  <tr><td class="center">Challenge (2)</td><td>+2 (tougher steal/empower rolls)</td><td>Standard</td></tr>
+  <tr><td class="center">Epic (3)</td><td>+3 (hardest steal/empower rolls)</td><td>Short (&minus;2 rounds)</td></tr>
 </table>
 
 <h3>Number of Automa</h3>
@@ -1265,35 +1270,31 @@
   <tr><td>Portal rotation (per round)</td><td class="center">Remove = total players; refill to 12</td></tr>
   <tr><td>Portal pool reset</td><td class="center">Every 5 rounds</td></tr>
   <tr><td>Kronos steal start</td><td class="center">Round 1</td></tr>
-  <tr><td>Kronos empower threshold</td><td class="center">2d6 + crystal excess &ge; 9</td></tr>
-  <tr><td>TimeLord upgrade threshold</td><td class="center">8 agent kairos (+ crystal deposited + artifact guarded)</td></tr>
+  <tr><td>Kronos empower threshold</td><td class="center">2d6 + mods &ge; 9</td></tr>
+  <tr><td>TimeLord upgrade threshold</td><td class="center">8 agent kairos</td></tr>
   <tr><td>Agent XP: travel/pickup/recovery</td><td class="center">+1 per successful action</td></tr>
   <tr><td>Agent XP: guard/deposit/restore</td><td class="center">+article's &#11088; Kairos value</td></tr>
   <tr><td>Agent XP: empower crystal</td><td class="center">+1</td></tr>
   <tr><td>Hazard die trigger</td><td class="center">Timeline &le; &minus;6 (non-TimeLords only)</td></tr>
-  <tr><td>Age die</td><td class="center">Always included (all agents). &#x2191; = age check, &#x2193; = sickness check</td></tr>
-  <tr><td>Age progression</td><td class="center">Child &rarr; Youth (start) &rarr; Adult &rarr; Old &rarr; Zerotime (overflow)</td></tr>
-  <tr><td>Ageing check (&#x2191;) d6</td><td class="center">1 = age up, 2 = de-age, 3&ndash;6 = nothing</td></tr>
-  <tr><td>Sickness check (&#x2193;) d6</td><td class="center">1&ndash;2 = miss next turn, 3&ndash;6 = nothing</td></tr>
-  <tr><td>Zerotime penalty</td><td class="center">Player's entire turn ends; agent resets to Youth next turn</td></tr>
   <tr><td>Empower crystal reward</td><td class="center">+1&#11088; (and -1&#11035; if paired artifact in Kronos)</td></tr>
-  <tr><td>Nerf roll: fresh crystal</td><td class="center">2d6 &ge; 4 (92%)</td></tr>
-  <tr><td>Nerf roll: depleted (3)</td><td class="center">2d6 &minus; 3 &ge; 4 (58%)</td></tr>
+  <tr><td>Nerf roll: fresh artifact (0 dep)</td><td class="center">2d6 &ge; 4 (92%)</td></tr>
+  <tr><td>Nerf roll: after 1 nerf (4 dep)</td><td class="center">2d6 &minus; 4 &ge; 4 (42%)</td></tr>
+  <tr><td>Nerf depletion per success</td><td class="center">+4 to artifact</td></tr>
   <tr><td>End Score Card max bonus</td><td class="center">+6&#11088; (3 per artifact, 2 artifacts per card)</td></tr>
-  <tr><td>Vortex success</td><td class="center">2d6 + empowered crystals &minus; Kronos empowered &ge; 9</td></tr>
+  <tr><td>Vortex success</td><td class="center">2d6 + HQ crystals &minus; Kronos artifacts + TL assist + urgency &ge; 9</td></tr>
   <tr><td>Vortex wipe</td><td class="center">&le; 4</td></tr>
   <tr><td>Vortex reward</td><td class="center">+10&#11088;, -3&#11035;</td></tr>
   <tr><td>Vortex max agents</td><td class="center">3</td></tr>
   <tr><td>Jail: doubles escape cost</td><td class="center">&minus;2&#11088;</td></tr>
-  <tr><td>Jail: bribe cost</td><td class="center">&minus;3&#11088;, +1&#11035;</td></tr>
+  <tr><td>Jail: bribe cost</td><td class="center">&minus;3&#11088;, &minus;1&#11035;</td></tr>
   <tr><td>Jail: forced bribe after</td><td class="center">3 turns</td></tr>
   <tr><td>LIT: escape threshold</td><td class="center">d6 &ge; 5</td></tr>
   <tr><td>LIT: forced release after</td><td class="center">3 turns (+1&#11035;)</td></tr>
   <tr><td>Item restore bonus</td><td class="center">-1 Paradox per item</td></tr>
-  <tr><td style="color:var(--accent2)">Easter Egg Crystal upgrade cost</td><td class="center">+5&#11088; to all opponents OR +N&#11035; Blots (N = opponents)</td></tr>
+  <tr><td style="color:var(--accent2)">Easter Egg Crystal upgrade cost</td><td class="center">-3&#11088; Kairos OR +1&#11035; Blot</td></tr>
   <tr><td style="color:var(--accent2)">Dinosaur spawn threshold</td><td class="center">Paradoxes &ge; 10</td></tr>
-  <tr><td style="color:var(--accent2)">Dinosaur evasion</td><td class="center">Agent: 2d6 &ge; 8 to evade; TimeLord: 2d6 &ge; 6</td></tr>
-  <tr><td style="color:var(--accent2)">TimeLord send-back reward</td><td class="center">+2&#11088; Kairos OR -2&#11035; Blots</td></tr>
+  <tr><td style="color:var(--accent2)">Dinosaur trample threshold</td><td class="center">2d6 &le; 9 (agent wiped)</td></tr>
+  <tr><td style="color:var(--accent2)">TimeLord send-back reward</td><td class="center">+2&#11088; Kairos OR -1&#11035; Blot</td></tr>
   <tr><td style="color:var(--accent2)">Send-back recall risk</td><td class="center">2d6: 2-6 safe (42%), 7-8 recalled (31%), 9+ recalled + miss turn (28%)</td></tr>
 </table>
 
@@ -1378,9 +1379,9 @@
 <h2 id="sec-23"><span class="section-num">23.</span> Articles Reference</h2>
 
 <h3>Recovery Factor Key</h3>
-<p><strong>A</strong> = Archaeology &middot; <strong>S</strong> = Security &middot; <strong>C</strong> = Cyber &middot; <strong>P</strong> = Psychic &middot; <strong>M</strong> = Medical &middot; <strong>H</strong> = Historian</p>
+<p><strong>A</strong> = Archivist &middot; <strong>S</strong> = Security &middot; <strong>C</strong> = Cryptohacker &middot; <strong>P</strong> = Psychotronics &middot; <strong>M</strong> = Medical &middot; <strong>H</strong> = Historian</p>
 
-<p>See the <a href="articles.html">Article Reference</a> for all 36 articles with images, stats, and recovery requirements, or the <a href="dice.html">Dice Reference</a> for full recovery factor descriptions.</p>
+<p>See the <a href="#article-gallery">Article Gallery</a> below for all 36 articles with images, stats, and recovery requirements.</p>
 
 <hr>
 
@@ -1394,7 +1395,7 @@
   <tr><td><strong>Blots (&#11035;)</strong></td><td>Karma penalties. Must reach 0 for a player to contribute to a team victory.</td></tr>
   <tr><td><strong>Carry Capacity</strong></td><td>Number of articles an agent can hold: 2 (regular) or 3 (TimeLord).</td></tr>
   <tr><td><strong>Cronovision</strong></td><td>An in-game probability display showing Monte Carlo success rates for travel and recovery at each destination.</td></tr>
-  <tr><td><strong>Crystal Light</strong></td><td>Timeline increase during Kronos Phase 4 from crystals deposited at HQ. Each crystal rolls 2d6; on 9+ it contributes +1 or +2 Timeline. Empowered crystals get +3 bonus.</td></tr>
+  <tr><td><strong>Crystal Light</strong></td><td>Timeline increase during Kronos Phase 4. All non-depleted crystals at HQ or in the field roll 2d6 + mods vs 9. Hit: +2 Timeline (+3 if paired artifact is nerfed); Miss: +1. Empowered crystals get +3 roll bonus.</td></tr>
   <tr><td><strong>Depletion</strong></td><td>When the timeline overflows beyond &plusmn;15, excess triggers depletion on crystals (negative overflow) or artifacts (positive overflow). Depleted crystals roll but contribute no Timeline.</td></tr>
   <tr><td><strong>Deposit</strong></td><td>Returning an item or crystal to HQ, earning its Kairos and removing its Blots. Items also reduce paradoxes by 1.</td></tr>
   <tr><td><strong>Dinosaur</strong></td><td>A time-displaced creature that spawns when paradoxes reach 10+. Tramples non-TimeLord agents. Can be sent back by TimeLords. (Expansion)</td></tr>
@@ -1410,7 +1411,8 @@
   <tr><td><strong>End Score Card</strong></td><td>A Kronos card chosen during setup that pairs two artifacts. Earn bonus kairos (up to +6) at game end for nerfing those artifacts.</td></tr>
   <tr><td><strong>Hazard Die (Baal)</strong></td><td>A penalty die added to travel rolls when the timeline is &le; &minus;6. Has 2 hazard crosses (miss next turn) and 4 blanks. TimeLords are immune.</td></tr>
   <tr><td><strong>Timeline</strong></td><td>The shared timeline tracker (-15 to +15). Must be positive to win.</td></tr>
-  <tr><td><strong>Nerfed</strong></td><td>An artifact whose paired crystal is empowered &mdash; Kronos skips it entirely. Requires a successful 2d6 roll minus depletion &ge; 4. Resets each round.</td></tr>
+  <tr><td><strong>Intel Die</strong></td><td>An all-wild recovery die granted by the Intel/Recon action. Single use &mdash; consumed when a recovery session starts.</td></tr>
+  <tr><td><strong>Nerfed</strong></td><td>An artifact whose paired crystal is empowered &mdash; Kronos skips it entirely. Requires a successful 2d6 roll minus artifact depletion &ge; 4. Each nerf adds +4 depletion. Resets each round.</td></tr>
   <tr><td><strong>Paired</strong></td><td>Each crystal is randomly linked to one artifact at game start. Empowering the crystal nerfs the artifact.</td></tr>
   <tr><td><strong>Paradox</strong></td><td>A counter that increases when Kronos steals artifacts and decreases when items are restored. Affects time collapse checks.</td></tr>
   <tr><td><strong>Portal</strong></td><td>A Time Location with a travel bonus (extra Blue die). 12 are active at any time.</td></tr>
@@ -1423,13 +1425,13 @@
   <tr><td><strong>Time Field</strong></td><td>The hexagonal grid of 37 tiles where the game takes place.</td></tr>
   <tr><td><strong>TimeLord</strong></td><td>An elite agent with bonus dice, increased carry capacity, and special abilities (empower, vortex, rescue).</td></tr>
   <tr><td><strong>Vortex</strong></td><td>The central hex tile. Can be switched off by a TimeLord for a major bonus (+10&#11088;, -3&#11035;).</td></tr>
-  <tr><td><strong>Time Travel Sickness</strong></td><td>Caused by the Hazard die's cross (+) face. The affected agent misses their next turn.</td></tr>
+  <tr><td><strong>Age Die</strong></td><td>A purple die included in every travel roll. Faces: +, &minus;, 0, 0, 0, 0. The + triggers an ageing check, the &minus; triggers a sickness check.</td></tr>
+  <tr><td><strong>Ageing</strong></td><td>Avatar life-stage progression caused by the Age die's + face. Steps: Child &rarr; Youth &rarr; Adult &rarr; Old &rarr; Zero Time.</td></tr>
+  <tr><td><strong>Time Travel Sickness</strong></td><td>Caused by the Age die's &minus; face (d6 roll of 1&ndash;2) or the Hazard die's cross (+) face. The affected agent misses their next turn.</td></tr>
   <tr><td><strong>Wild (&#9733;)</strong></td><td>A dice face that can substitute for any requirement (only on final roll for recovery).</td></tr>
+  <tr><td><strong>Zero Time</strong></td><td>A critical state entered when ageing overflows past Old or below Child. All unspent agents are marked spent and the player's turn ends immediately.</td></tr>
   <tr><td><strong>Wiped</strong></td><td>An agent destroyed (e.g., Vortex failure or Plasma Confinement event). Permanently out of the game.</td></tr>
   <tr><td><strong>Xanadu</strong></td><td>The time police organisation that runs the Jail.</td></tr>
-  <tr><td><strong>Age Die</strong></td><td>A purple die included in every travel roll. Has 1 ageing face (&#x2191;), 1 sickness face (&#x2193;), and 4 blanks. Does not contribute to travel requirements.</td></tr>
-  <tr><td><strong>Zerotime</strong></td><td>Temporal overflow state triggered when an agent ages past Old or de-ages past Child. Ends the player's turn immediately; agent resets to Youth at start of next turn.</td></tr>
-  <tr><td><strong>Age State</strong></td><td>Each agent's current age: Child &rarr; Youth (default) &rarr; Adult &rarr; Old. Changed by the Age die's ageing face during travel.</td></tr>
 </table>
 
 <hr>
@@ -1451,16 +1453,15 @@
 <h4>Upgrade Cost (player's choice):</h4>
 <table>
   <tr><th>Option</th><th>Cost</th></tr>
-  <tr><td>Kairos Compensation</td><td><strong>+5&#11088; Kairos</strong> awarded to <strong>every</strong> opponent (players + automata)</td></tr>
-  <tr><td>Accept Blots</td><td><strong>+N&#11035; Blots</strong> to yourself (N = number of opponents)</td></tr>
+  <tr><td>Pay Kairos</td><td><strong>-3&#11088; Kairos</strong></td></tr>
+  <tr><td>Accept Blot</td><td><strong>+1&#11035; Blot</strong></td></tr>
 </table>
 
 <h3>Strategic Considerations</h3>
 <ul>
   <li>The Easter Egg provides an <strong>alternate fast-track</strong> to TimeLord upgrades, especially valuable in the early game when crystals from space are first being recovered</li>
   <li>Since the identity is hidden, every crystal recovery carries the exciting possibility of discovering the Easter Egg</li>
-  <li>Players must weigh the cost: giving all opponents +5 Kairos is a significant competitive disadvantage, while accepting blots works against the victory condition</li>
-  <li>In a 2-player game the blot penalty is +1, making it the obvious choice; in 3&ndash;4 player games the tradeoff is harder</li>
+  <li>Players must weigh the cost: spending 3 Kairos is steep early on, while accepting a Blot works against the victory condition</li>
   <li>Multiple agents at the same HQ can all take advantage of the Easter Egg crystal across different turns</li>
   <li>The Easter Egg crystal still functions normally as a crystal for Crystal Light, empowerment, and nerfing</li>
 </ul>
@@ -1517,7 +1518,7 @@
 <table>
   <tr><th>Option</th><th>Reward</th></tr>
   <tr><td>Gain Kairos</td><td><strong>+2&#11088; Kairos</strong></td></tr>
-  <tr><td>Remove Blots</td><td><strong>-2&#11035; Blots</strong></td></tr>
+  <tr><td>Remove Blot</td><td><strong>-1&#11035; Blot</strong></td></tr>
 </table>
 
 <h3>Recall Risk</h3>
@@ -1540,12 +1541,619 @@
 
 <blockquote><strong>Warning:</strong> This expansion significantly increases game difficulty. It is recommended for experienced players who are comfortable with the base game mechanics. Consider combining with the Easter Egg Crystal expansion to offset the increased threat level with faster TimeLord upgrades.</blockquote>
 
+<hr>
+
+<!-- ARTICLE GALLERY -->
+<h2 id="article-gallery"><span class="section-num">&bull;</span> Article Gallery</h2>
+<p>All 36 articles in the game. <strong>A</strong> = Archivist &middot; <strong>S</strong> = Security &middot; <strong>C</strong> = Cryptohacker &middot; <strong>P</strong> = Psychotronics &middot; <strong>M</strong> = Medical &middot; <strong>H</strong> = Historian</p>
+
+<h3>Artifacts &mdash; Guarded at their location to protect from Kronos</h3>
+<div class="gallery">
+  <div class="gallery-card">
+    <img src="ART100.png" alt="Arc of Covenant" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Arc of Covenant</div>
+      <div class="card-date">&#11088;6 &middot; A H M P</div>
+      <div class="card-article">Giza Pyramids (2108 BC)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART101.png" alt="Holy Grail" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Holy Grail</div>
+      <div class="card-date">&#11088;6 &middot; A H M P</div>
+      <div class="card-article">South of France (78 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART108.png" alt="Excalibur Sword" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Excalibur Sword</div>
+      <div class="card-date">&#11088;6 &middot; A H M P</div>
+      <div class="card-article">Glastonbury (512 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART105.png" alt="Devil's Chair" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Devil's Chair</div>
+      <div class="card-date">&#11088;6 &middot; A H M P</div>
+      <div class="card-article">Pergamon (1941 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART200.png" alt="Staff of Osiris" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Staff of Osiris</div>
+      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-article">Thebes (1250 BC)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART204.png" alt="Crystal Skull" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Crystal Skull</div>
+      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-article">Mesoamerica (1520 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART102.png" alt="King Solomon's Ring" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">King Solomon's Ring</div>
+      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-article">Jerusalem (612 BC)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART110.png" alt="Spear of Destiny" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Spear of Destiny</div>
+      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-article">Jerusalem (33 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART206.png" alt="Seal of Solomon" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Seal of Solomon</div>
+      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-article">Jerusalem (970 BC)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART207.png" alt="Nefertiti's Amulet" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Nefertiti's Amulet</div>
+      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-article">Akhetaten (1330 BC)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART205.png" alt="Chintamani Stone" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Chintamani Stone</div>
+      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-article">Lhasa (1275 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART209.png" alt="Jade Monkey" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Jade Monkey</div>
+      <div class="card-date">&#11088;4 &middot; A P S</div>
+      <div class="card-article">Xian (221 BC)</div>
+    </div>
+  </div>
+</div>
+
+<h3>Crystals &mdash; Deposited at HQ for Crystal Light Timeline contributions</h3>
+<div class="gallery">
+  <div class="gallery-card">
+    <img src="ART112.png" alt="Jasper" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Jasper</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-article">Venus (2153 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART113.png" alt="Sapphire" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Sapphire</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-article">Ganymede (2154 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART114.png" alt="Chalcedony" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Chalcedony</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-article">Saturn Rings (2163 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART115.png" alt="Emerald" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Emerald</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-article">Ceres (2125 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART116.png" alt="Sardonyx" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Sardonyx</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-article">Neptune (2169 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART117.png" alt="Sardius" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Sardius</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-article">Mt Shasta (2164 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART118.png" alt="Chrysolite" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Chrysolite</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-article">Venus (2183 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART119.png" alt="Beryl" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Beryl</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-article">Ganymede (2184 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART120.png" alt="Topaz" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Topaz</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-article">Saturn Rings (2133 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART121.png" alt="Chrysoprasus" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Chrysoprasus</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-article">Ceres (2124 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART122.png" alt="Jacinth" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Jacinth</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-article">Neptune (2103 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART123.png" alt="Amethyst" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Amethyst</div>
+      <div class="card-date">&#11088;3 &#11035;1 &middot; S C P M</div>
+      <div class="card-article">Mt Fuji (2157 AD)</div>
+    </div>
+  </div>
+</div>
+
+<h3>Items &mdash; Carried to HQ for restoration</h3>
+<div class="gallery">
+  <div class="gallery-card">
+    <img src="ART107.png" alt="The Crown Jewels" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">The Crown Jewels</div>
+      <div class="card-date">&#11088;8 &#11035;2 &middot; A S C P M H</div>
+      <div class="card-article">Tower of London (2035 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART111.png" alt="Tesseract Cube" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Tesseract Cube</div>
+      <div class="card-date">&#11088;6 &#11035;1 &middot; A H M P</div>
+      <div class="card-article">Asgard (2150 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART208.png" alt="Shambhala Passport" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Shambhala Passport</div>
+      <div class="card-date">&#11088;6 &#11035;1 &middot; A H M S</div>
+      <div class="card-article">Shambhala (12,345 BC)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART103.png" alt="Henry VIII Armour" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Henry VIII Armour</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; A P S</div>
+      <div class="card-article">London (1120 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART106.png" alt="Maltese Falcon" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Maltese Falcon</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-article">Bermuda Triangle (1955 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART109.png" alt="Schrodinger's Cat" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Schrodinger's Cat</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-article">Woodbridge UK (1980 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART201.png" alt="Da Vinci's Compass" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Da Vinci's Compass</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-article">Florence (1503 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART202.png" alt="Tesla's Coil Fragment" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Tesla's Coil Fragment</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-article">New York (1895 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART203.png" alt="Viking Runestone" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Viking Runestone</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-article">Nordic Village (845 AD)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART210.png" alt="Babylonian Tablet" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Babylonian Tablet</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-article">Babylon (1750 BC)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART211.png" alt="Antikythera" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Antikythera</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-article">Aegean Sea (1200 BC)</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="ART212.png" alt="Shakespeare's Quill" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Shakespeare's Quill</div>
+      <div class="card-date">&#11088;4 &#11035;1 &middot; M P S</div>
+      <div class="card-article">London (1599 AD)</div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- IMAGE GALLERY -->
+<h2 id="gallery"><span class="section-num">&bull;</span> Time Location Gallery</h2>
+<p>All 35 Time Locations visualised. Each image depicts the destination as your agents would experience it upon arrival.</p>
+
+<div class="gallery">
+  <!-- Past Era (BC) -->
+  <div class="gallery-card">
+    <img src="TL500Pic.jpg" alt="Giza Pyramids" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Giza Pyramids</div>
+      <div class="card-date">2108 BC</div>
+      <div class="card-article">Arc of Covenant</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL502Pic.jpg" alt="Jerusalem" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Jerusalem</div>
+      <div class="card-date">612 BC</div>
+      <div class="card-article">King Solomon's Ring</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL524Pic.jpg" alt="Thebes" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Thebes</div>
+      <div class="card-date">1250 BC</div>
+      <div class="card-article">Staff of Osiris</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL530Pic.jpg" alt="Jerusalem" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Jerusalem</div>
+      <div class="card-date">970 BC</div>
+      <div class="card-article">Seal of Solomon</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL531Pic.jpg" alt="Akhetaten" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Akhetaten</div>
+      <div class="card-date">1330 BC</div>
+      <div class="card-article">Nefertiti's Amulet</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL532Pic.jpg" alt="Shambhala" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Shambhala</div>
+      <div class="card-date">12,345 BC</div>
+      <div class="card-article">Shambhala Passport</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL533Pic.jpg" alt="Xian" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Xian</div>
+      <div class="card-date">221 BC</div>
+      <div class="card-article">Jade Monkey</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL534Pic.jpg" alt="Babylon" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Babylon</div>
+      <div class="card-date">1750 BC</div>
+      <div class="card-article">Babylonian Tablet</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL535Pic.jpg" alt="Aegean Sea" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Aegean Sea</div>
+      <div class="card-date">1200 BC</div>
+      <div class="card-article">Antikythera</div>
+    </div>
+  </div>
+
+  <!-- Past/Present Era (AD historical) -->
+  <div class="gallery-card">
+    <img src="TL501Pic.jpg" alt="South of France" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">South of France</div>
+      <div class="card-date">78 AD</div>
+      <div class="card-article">Holy Grail</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL503Pic.jpg" alt="London" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">London</div>
+      <div class="card-date">1120 AD</div>
+      <div class="card-article">Henry VIII Armour</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL505Pic.jpg" alt="Pergamon" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Pergamon</div>
+      <div class="card-date">1941 AD</div>
+      <div class="card-article">Devil's Chair</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL506Pic.jpg" alt="Bermuda Triangle" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Bermuda Triangle</div>
+      <div class="card-date">1955 AD</div>
+      <div class="card-article">Maltese Falcon</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL508Pic.jpg" alt="Glastonbury" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Glastonbury</div>
+      <div class="card-date">512 AD</div>
+      <div class="card-article">Excalibur Sword</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL509Pic.jpg" alt="Woodbridge UK" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Woodbridge UK</div>
+      <div class="card-date">1980 AD</div>
+      <div class="card-article">Schr&ouml;dinger's Cat</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL510Pic.jpg" alt="Jerusalem" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Jerusalem</div>
+      <div class="card-date">33 AD</div>
+      <div class="card-article">Spear of Destiny</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL525Pic.jpg" alt="Florence" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Florence</div>
+      <div class="card-date">1503 AD</div>
+      <div class="card-article">Da Vinci's Compass</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL526Pic.jpg" alt="New York" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">New York</div>
+      <div class="card-date">1895 AD</div>
+      <div class="card-article">Tesla's Coil Fragment</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL527Pic.jpg" alt="Nordic Village" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Nordic Village</div>
+      <div class="card-date">845 AD</div>
+      <div class="card-article">Viking Runestone</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL528Pic.jpg" alt="Mesoamerica" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Mesoamerica</div>
+      <div class="card-date">1520 AD</div>
+      <div class="card-article">Crystal Skull</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL529Pic.jpg" alt="Lhasa" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Lhasa</div>
+      <div class="card-date">1275 AD</div>
+      <div class="card-article">Chintamani Stone</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL536Pic.jpg" alt="London" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">London</div>
+      <div class="card-date">1599 AD</div>
+      <div class="card-article">Shakespeare's Quill</div>
+    </div>
+  </div>
+
+  <!-- Future Era -->
+  <div class="gallery-card">
+    <img src="TL507Pic.jpg" alt="Tower of London" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Tower of London</div>
+      <div class="card-date">2035 AD</div>
+      <div class="card-article">Crown Jewels</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL511Pic.jpg" alt="Asgard" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Asgard</div>
+      <div class="card-date">2150 AD</div>
+      <div class="card-article">Tesseract Cube</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL512Pic.jpg" alt="Venus" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Venus</div>
+      <div class="card-date">2153 AD</div>
+      <div class="card-article">Jasper</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL513Pic.jpg" alt="Ganymede" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Ganymede</div>
+      <div class="card-date">2154 AD</div>
+      <div class="card-article">Sapphire</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL514Pic.jpg" alt="Saturn Rings" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Saturn Rings</div>
+      <div class="card-date">2163 AD</div>
+      <div class="card-article">Chalcedony</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL515Pic.jpg" alt="Ceres" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Ceres</div>
+      <div class="card-date">2125 AD</div>
+      <div class="card-article">Emerald</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL516Pic.jpg" alt="Neptune" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Neptune</div>
+      <div class="card-date">2169 AD</div>
+      <div class="card-article">Sardonyx</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL517Pic.jpg" alt="Mt Shasta" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Mt Shasta</div>
+      <div class="card-date">2164 AD</div>
+      <div class="card-article">Sardius</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL518Pic.jpg" alt="Venus" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Venus</div>
+      <div class="card-date">2183 AD</div>
+      <div class="card-article">Chrysolite</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL519Pic.jpg" alt="Ganymede" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Ganymede</div>
+      <div class="card-date">2184 AD</div>
+      <div class="card-article">Beryl</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL520Pic.jpg" alt="Saturn Rings" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Saturn Rings</div>
+      <div class="card-date">2133 AD</div>
+      <div class="card-article">Topaz</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL521Pic.jpg" alt="Ceres" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Ceres</div>
+      <div class="card-date">2124 AD</div>
+      <div class="card-article">Chrysoprasus</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL522Pic.jpg" alt="Neptune" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Neptune</div>
+      <div class="card-date">2103 AD</div>
+      <div class="card-article">Jacinth</div>
+    </div>
+  </div>
+  <div class="gallery-card">
+    <img src="TL523Pic.jpg" alt="Mt Fuji" loading="lazy">
+    <div class="card-info">
+      <div class="card-title">Mt Fuji</div>
+      <div class="card-date">2157 AD</div>
+      <div class="card-article">Amethyst</div>
+    </div>
+  </div>
+</div>
+
 </div><!-- end container -->
 
 <footer>
   <div class="copyright">Kairos &mdash; Time Travellers &copy; Kairos Games UK. All rights reserved.</div>
   <div>BGG ID: 457265</div>
-  <div style="margin-top:6px; color:var(--gold-dim);">Rulebook v2.0 &mdash; 24 June 2026</div>
 </footer>
 
 </body>
